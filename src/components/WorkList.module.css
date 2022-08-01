@@ -1,0 +1,11 @@
+.list_wrapper {
+  padding: 0 50px;
+}
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.title_wrapper {
+  padding: 2.5em 0 3.5em 0;
+}

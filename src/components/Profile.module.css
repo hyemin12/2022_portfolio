@@ -1,0 +1,52 @@
+.title {
+  margin-bottom: 2em;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.article {
+  padding: 2em 4em;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.h2_title {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  font-size: 1em;
+}
+.interview_wrapper {
+  display: flex;
+  gap: 10px;
+  padding: 1em 0;
+}
+/* skill */
+.skill_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.skill_contents {
+  width: 50%;
+}
+.skill_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.skill_item {
+  padding: 2px 7px;
+  background-color: #eee;
+  font-size: 0.9em;
+}
+.skill_subtitle {
+  padding: 1em 0;
+  text-transform: capitalize;
+}
