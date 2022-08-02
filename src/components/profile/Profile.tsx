@@ -4,7 +4,8 @@ import About from "./About";
 import Experience from "./Experience";
 import styles from "./Profile.module.css";
 import Skills from "./Skills";
-function Profile2() {
+
+function Profile() {
   return (
     <div>
       <div className={classNames(styles.wrapper, styles.bg)}>
@@ -45,4 +46,4 @@ function Profile2() {
   );
 }
 
-export default Profile2;
+export default Profile;

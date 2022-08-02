@@ -24,7 +24,7 @@ const ProjectItem2 = (item: ProjectProps) => {
           <div className={styles.row}>
             <h4 className={styles.item_title}>{item.title}</h4>
             <div>
-              <Link to={`/${item.id}`}>
+              <Link to={`/works/${item.id}`}>
                 <AspectRatioIcon className={styles.link_btn} />
               </Link>
               <a href={item.url} target="_blank" rel="noreferrer">

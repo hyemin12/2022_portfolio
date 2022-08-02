@@ -23,7 +23,7 @@
   justify-content: space-between;
 }
 .item_title {
-  width: 150px;
+  width: 200px;
   font-size: 1.1em;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -45,7 +45,7 @@
   color: #fccb00;
 }
 
-@media screen and (max-width: 843px) {
+@media screen and (max-width: 900px) {
   .item {
     width: 48%;
   }

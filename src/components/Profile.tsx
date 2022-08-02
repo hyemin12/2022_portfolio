@@ -3,6 +3,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import EmailIcon from "@mui/icons-material/Email";
 import EventIcon from "@mui/icons-material/Event";
 
+import Intro from "./Intro";
 import styles from "./Profile.module.css";
 
 function Profile() {
@@ -30,10 +31,7 @@ function Profile() {
   ];
   return (
     <div className="w1200">
-      <h1 className={styles.title}>
-        고혜민을
-        <br /> 소개합니다.
-      </h1>
+      <Intro />
       <div className={styles.article}>
         <ul className={styles.wrapper}>
           <li className={styles.item}>

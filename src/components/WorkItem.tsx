@@ -6,7 +6,12 @@ import styles from "./WorkItem.module.css";
 const WorkItem = (work: WorkProps) => {
   return (
     <>
-      <li key={work.id} className={styles.item}>
+      <li
+        key={work.id}
+        className={styles.item}
+        // style={{ backgroundImage: `linear-gradient(135deg, ${work.bgColor})` }}
+        style={{ backgroundColor: `${work.bgColor}` }}
+      >
         <div className={styles.img_wrapper}>
           <img
             src={`/assets/${work.id}.png`}
@@ -19,8 +24,8 @@ const WorkItem = (work: WorkProps) => {
           <p className={styles.filter}>{work.filter}</p>
         </div>
         <div className={styles.btn_group}>
-          <Link to={`/${work.id}`}>
-            <p className={styles.link_btn}>코드 보러가기</p>
+          <Link to={`/portfolio/${work.id}`}>
+            <p className={styles.link_btn}>상세보기</p>
           </Link>
           <a href={work.url} target="_blank" rel="noreferrer">
             <p className={styles.link_btn}>사이트로 이동</p>

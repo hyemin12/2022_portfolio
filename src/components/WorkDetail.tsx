@@ -1,93 +1,98 @@
-import { Link, useParams } from "react-router-dom";
+import classNames from "classnames";
+import { useParams } from "react-router-dom";
+
 import { data } from "../data";
-import CloseIcon from "@mui/icons-material/Close";
+import { WorkProps, ProjectProps } from "../type";
 import styles from "./WorkDetail.module.css";
 
-const WorkDetail = () => {
+function WorkDetail() {
   const { id } = useParams();
-  const work = data.works.filter((item) => item.id === id)[0];
+  const item = data.projects.filter((item) => item.id === id)[0];
   return (
-    <div className={styles.container}>
-      <div className={styles.inner}>
-        <Link to="/">
-          <CloseIcon fontSize="large" className={styles.close_btn} />
-        </Link>
-        <div className={styles.image}>
-          <img src={`/assets/${work.id}.png`} alt={work.title} />
+    <div className={classNames(styles.detail_wrapper, "w1200")}>
+      <div className={styles.row}>
+        <div className={styles.main_img}>
+          <img
+            src={`/assets/${item.id}.png`}
+            alt={item.title}
+            className={styles.img}
+          />
         </div>
-        <h1 className={styles.title}>{work.title}</h1>
-        <div className={styles.pd_15}>
-          <p>
-            <span className={styles.bold}>Project host: </span>
-            Hyemin
-          </p>
-          <p>
-            <span className={styles.bold}>Project date: </span>
-            {work.date}
-          </p>
-          {work.url && (
-            <p className={styles.link_wrap}>
-              <span className={styles.bold}>Project url: </span>
+        <div className={styles.text_wrapper}>
+          <p className={styles.filter}>{item.filter}</p>
+          <h1 className={styles.title}>{item.title}</h1>
+          <p className={styles.date}>{item.date}</p>
+
+          <div className={styles.describtion}>
+            {item.describtion.map((a, i) => (
+              <p key={i}>{a}</p>
+            ))}
+          </div>
+
+          <div className={styles.link_group}>
+            {item.url && (
               <a
-                href={work.url}
+                href={item.url}
                 target="_blank"
                 rel="noreferrer"
-                className={styles.link}
+                className={styles.link_url}
               >
-                {work.url}
+                사이트로 이동
               </a>
-            </p>
-          )}
-          {work.git && (
-            <p className={styles.link_wrap}>
-              <span className={styles.bold}>Code url: </span>
+            )}
+            {item.git && (
               <a
-                href={work.git}
+                href={item.git}
                 target="_blank"
                 rel="noreferrer"
-                className={styles.link}
+                className={styles.link_git}
               >
-                {work.git}
+                코드 보러가기
               </a>
-            </p>
-          )}
-        </div>
-
-        <div className={styles.pd_15}>
-          <h2 className={styles.desc}>describtion</h2>
-          {work.describtion.map((i) => (
-            <p>{i}</p>
-          ))}
-          {work.features && (
-            <div className={styles.pd_15}>
-              <h3 className={styles.subtitle}>기능</h3>
-              {work.features.map((text) => (
-                <p key={text}>{text}</p>
-              ))}
-            </div>
-          )}
-          {/* {work.ect && (
-            <div className={styles.pd_15}>
-              <a href={work.ect} target="_blank" rel="noreferrer">
-                <p className={styles.link}>🔍 참고 이미지 및 원본 사이트</p>
-              </a>
-            </div>
-          )} */}
-
-          <div>
-            <h3 className={styles.subtitle}>package</h3>
-            <div className={styles.tools}>
-              {work.tool.map((text) => (
-                <p className={styles.tool} key={text}>
-                  #{text}
-                </p>
-              ))}
-            </div>
+            )}
           </div>
         </div>
       </div>
+      <div className={styles.tools}>
+        {item.tool.map((a) => (
+          <span className={styles.tool} key={a}>
+            {a}
+          </span>
+        ))}
+      </div>
+      {/* <div className={styles.row}>
+        <div className={styles.left_wrapper}>
+          <div className={styles.describtion}>
+            {item.describtion.map((a, i) => (
+              <p key={i}>{a}</p>
+            ))}
+          </div>
+          <div>
+            <h4>기능</h4>
+            {item.features && item.features.map((a, i) => <p key={i}>{a}</p>)}
+          </div>
+        </div>
+
+        <ul className={styles.img_wrapper}>
+          <li className={styles.img_item}>
+            <img
+              src={`/assets/${item.id}.png`}
+              alt={item.title}
+              className={styles.img}
+            />
+          </li>
+
+          <li className={styles.img_item}>
+            <img
+              src={`/assets/${item.id}.png`}
+              alt={item.title}
+              className={styles.img}
+            />
+          </li>
+        </ul>
+      </div> */}
     </div>
   );
-};
+}
 
 export default WorkDetail;

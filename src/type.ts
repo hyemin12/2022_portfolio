@@ -20,4 +20,6 @@ export interface WorkProps {
   tool: string[];
   git: string | undefined;
   url: string;
+  bgColor: string;
+  detailImg: string[];
 }

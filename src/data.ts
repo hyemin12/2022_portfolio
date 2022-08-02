@@ -3,7 +3,7 @@ export const data = {
     {
       filter: "Vanilla JS",
       id: "starbucks",
-      title: "starbucks 2017",
+      title: "Starbucks 2017",
       describtion: [
         "스타벅스 홈페이지를 클론 코딩한 프로젝트입니다. 패스트 캠퍼스 프론트 엔드 강의를 수강하며 제작한 홈페이지이며, 메인페이지와 로그인페이지로 이루어져 있습니다. 카카오톡이나 다른 어플로 공유했을 때, 사이트에 대한 정보를 담을 수 있는 open graph에 대하여 공부하였습니다.",
       ],
@@ -228,6 +228,8 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/react-movie-app",
       url: "https://react-movie-app-1f5ff8.netlify.app/",
+      bgColor: "#e9edec",
+      detailImg: [],
     },
     // {
     //   filter: "Typescript",
@@ -262,8 +264,11 @@ export const data = {
         "3. 현재 날짜 확인",
         "4. 할일 완료 여부 (체크박스)",
       ],
+
       git: "https://github.com/hyemin12/typescript-todo-app",
-      url: "https://hm-tsc-typescript.netlify.app",
+      url: "https://hm-tsc-todo-app.netlify.app",
+      bgColor: "#d9e4eb",
+      detailImg: [],
     },
 
     {
@@ -283,6 +288,8 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/vanillaJS-wordle-app",
       url: "https://hyemin12.github.io/vanillaJS-wordle-app/",
+      bgColor: "#eae2cf",
+      detailImg: [],
     },
     {
       filter: "React",
@@ -312,6 +319,8 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/react-dashboard-app2",
       url: "https://lucid-yonath-d614bb.netlify.app/",
+      bgColor: "#f3e7e9",
+      detailImg: [],
     },
   ],
   social: [
