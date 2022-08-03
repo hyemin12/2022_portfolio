@@ -1,22 +1,23 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import WorkTemplate from "./pages/WorkTemplate";
-import ProfileTemplate from "./pages/ProfileTemplate";
-import ProjectTemplate from "./pages/ProjectTemplate";
-import DetailTemplate from "./pages/DetailTemplate";
+import WorkPage from "./pages/WorkPage";
+import ProfilePage from "./pages/ProfilePage";
+import ProjectPage from "./pages/ProjectPage";
+import DetailPage from "./pages/DetailPage";
+import Error from "./pages/Error";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/works/:id" element={<DetailTemplate />}></Route>
-          <Route path="/works" element={<ProjectTemplate />}></Route>
-          <Route path="/portfolio/:id" element={<DetailTemplate />}></Route>
-          <Route path="/portfolio" element={<WorkTemplate />}></Route>
-          <Route path="/profile" element={<ProfileTemplate />}></Route>
+          <Route path="/works/:id" element={<DetailPage />}></Route>
+          <Route path="/works" element={<ProjectPage />}></Route>
+          <Route path="/portfolio/:id" element={<DetailPage />}></Route>
+          <Route path="/portfolio" element={<WorkPage />}></Route>
+          <Route path="/profile" element={<ProfilePage />}></Route>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/*" element={<Error />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

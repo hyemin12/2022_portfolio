@@ -1,16 +1,14 @@
-import React from "react";
+import Intro from "../components/Intro";
 import Layout from "../components/Layout";
+import ProjectList from "../components/ProjectList";
 import WorkList from "../components/WorkList";
 
 const Home = () => {
   return (
     <Layout>
-      <p className="main_text">
-        안녕하세요. 프론트엔드 개발자 고혜민입니다.안녕하세요. 프론트엔드 개발자
-        고혜민입니다.안녕하세요. 프론트엔드 개발자 고혜민입니다.안녕하세요.
-        프론트엔드 개발자 고혜민입니다.
-      </p>
+      <Intro />
       <WorkList />
+      <ProjectList />
     </Layout>
   );
 };

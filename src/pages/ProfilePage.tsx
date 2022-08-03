@@ -3,11 +3,9 @@ import Profile from "../components/Profile";
 
 const ProfileTemplate = () => {
   return (
-    <div>
-      <Layout>
-        <Profile />
-      </Layout>
-    </div>
+    <Layout>
+      <Profile />
+    </Layout>
   );
 };
 

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 import { data } from "../data";
 import ProjectItem from "./ProjectItem";
-import ProjectItem2 from "./ProjectItemCopy";
 import styles from "./ProjectList.module.css";
 
 const ProjectList = () => {
@@ -36,13 +35,9 @@ const ProjectList = () => {
       </div>
 
       <ul className={styles.project_wrapper}>
-        {/* {state &&
-          state.map((item) => {
-            return <ProjectItem {...item} key={item.id} />;
-          })} */}
         {state &&
           state.map((item) => {
-            return <ProjectItem2 {...item} key={item.id} />;
+            return <ProjectItem {...item} key={item.id} />;
           })}
       </ul>
     </div>

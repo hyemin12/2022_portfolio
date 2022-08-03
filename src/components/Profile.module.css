@@ -4,6 +4,7 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .article {
   padding: 2em 4em;
@@ -30,6 +31,7 @@
 /* skill */
 .skill_wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
@@ -49,4 +51,28 @@
 .skill_subtitle {
   padding: 1em 0;
   text-transform: capitalize;
+}
+/* 학력및교육 */
+.exp_items {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 01em 0;
+}
+.exp_item {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.sub {
+  font-size: 0.9em;
+  color: #777;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: 50%;
+  }
+  .skill_contents {
+    width: 100%;
+  }
 }
