@@ -3,7 +3,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import EmailIcon from "@mui/icons-material/Email";
 import EventIcon from "@mui/icons-material/Event";
 
-import Intro from "./Intro";
+import Typeit from "./Typeit";
 import styles from "./Profile.module.css";
 
 function Profile() {
@@ -60,7 +60,23 @@ function Profile() {
   ];
   return (
     <div className="w1200">
-      <Intro />
+      <div
+        className={styles.intro}
+        style={{ backgroundImage: "url(assets/bg.jpg)" }}
+      >
+        <div className={styles.intro_img}>
+          <img
+            src="https://github.com/hyemin12/typescript-my-portfolio/blob/master/public/assets/hyemin.jpg?raw=true"
+            alt="고혜민"
+            className={styles.img}
+          />
+        </div>
+        <div className={styles.intro_text}>
+          <h4 className={styles.hyemin}>고혜민</h4>
+          <Typeit />
+        </div>
+      </div>
+
       <div className={styles.article}>
         <ul className={styles.wrapper}>
           <li className={styles.item}>

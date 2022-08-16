@@ -1,0 +1,40 @@
+.swiper-container {
+  width: 10000px;
+  height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+.swiper-inner {
+  width: 100vw;
+  display: flex;
+}
+.swiper-item {
+  width: calc(100vw - 100px);
+  max-width: 1200px;
+}
+.img {
+  width: calc(100vw - 130px);
+}
+.btn-group {
+}
+.btn-prev,
+.btn-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+}
+.btn-prev {
+  left: 30px;
+}
+.btn-next {
+  right: 30px;
+}

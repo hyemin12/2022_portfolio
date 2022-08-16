@@ -80,10 +80,14 @@ function WorkDetail() {
           </div>
         </div>
         <div className={styles.line}></div>
-        <div className={styles.detail_wrapper}>
-          <h4 className={styles.h4}>기능</h4>
-          {item.features && item.features.map((a, i) => <p key={i}>{a}</p>)}
-        </div>
+        {item.features && (
+          <div className={styles.detail_wrapper}>
+            <h4 className={styles.h4}>기능</h4>
+            {item.features.map((a, i) => (
+              <p key={i}>{a}</p>
+            ))}
+          </div>
+        )}
         <div className={styles.line}></div>
         <div className={styles.detail_wrapper}>
           <h4 className={styles.h4}>사용툴</h4>

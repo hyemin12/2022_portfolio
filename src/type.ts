@@ -10,6 +10,7 @@ export interface ProjectProps {
   git?: string | undefined;
   url: string;
   ect?: string | undefined;
+  detailImg?: string[];
 }
 export interface WorkProps {
   filter: string;
@@ -21,5 +22,5 @@ export interface WorkProps {
   git: string | undefined;
   url: string;
   bgColor: string;
-  detailImg: string[];
+  detailImg?: string[];
 }

@@ -9,7 +9,6 @@ const WorkItem = (work: WorkProps) => {
       <li
         key={work.id}
         className={styles.item}
-        // style={{ backgroundImage: `linear-gradient(135deg, ${work.bgColor})` }}
         style={{ backgroundColor: `${work.bgColor}` }}
       >
         <div className={styles.img_wrapper}>
