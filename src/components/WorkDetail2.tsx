@@ -4,7 +4,7 @@ import { data } from "../data";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import styles from "./WorkDetail2.module.css";
-import Swiper from "./Swiper";
+import Swiper from "./Slider";
 
 function WorkDetail2() {
   const { id } = useParams();

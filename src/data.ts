@@ -303,7 +303,7 @@ export const data = {
       git: "https://github.com/hyemin12/vanillaJS-wordle-app",
       url: "https://hyemin12.github.io/vanillaJS-wordle-app/",
       bgColor: "#eae2cf",
-      detailImg: [],
+      detailImg: ["wordle1", "wordle2"],
     },
     {
       filter: "React",
