@@ -11,6 +11,7 @@ export interface ProjectProps {
   url: string;
   ect?: string | undefined;
   detailImg: string[];
+  setIsPopup: (isPopup: boolean) => void;
 }
 export interface WorkProps {
   filter: string;
@@ -23,4 +24,10 @@ export interface WorkProps {
   url: string;
   bgColor: string;
   detailImg: string[];
+
+  setIsPopup: (isPopup: boolean) => void;
+}
+export interface PopupProps {
+  setIsPopup: React.Dispatch<React.SetStateAction<boolean>>;
+  // setIsPopup: (isPopup: boolean) => void;
 }

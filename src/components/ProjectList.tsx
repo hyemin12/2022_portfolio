@@ -2,10 +2,11 @@ import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 
 import { data } from "../data";
+import { PopupProps } from "../type";
 import ProjectItem from "./ProjectItem";
 import styles from "./ProjectList.module.css";
 
-const ProjectList = () => {
+const ProjectList = ({ setIsPopup }: PopupProps) => {
   const filters = ["All", "React", "Vanilla JS", "jQuery", "ect"];
   const [state, setState] = useState(data.projects);
 
@@ -37,7 +38,9 @@ const ProjectList = () => {
       <ul className={styles.project_wrapper}>
         {state &&
           state.map((item) => {
-            return <ProjectItem {...item} key={item.id} />;
+            return (
+              <ProjectItem {...item} key={item.id} setIsPopup={setIsPopup} />
+            );
           })}
       </ul>
     </div>

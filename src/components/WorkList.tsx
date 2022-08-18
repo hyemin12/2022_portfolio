@@ -2,10 +2,11 @@ import classNames from "classnames";
 import React, { useEffect, useState } from "react";
 
 import { data } from "../data";
+import { PopupProps } from "../type";
 import WorkItem from "./WorkItem";
 import styles from "./WorkList.module.css";
 
-const WorkList = () => {
+const WorkList = ({ setIsPopup }: PopupProps) => {
   const state = data.works;
 
   return (
@@ -17,7 +18,7 @@ const WorkList = () => {
       <ul className={styles.works}>
         {state &&
           state.map((work) => {
-            return <WorkItem {...work} key={work.id} />;
+            return <WorkItem {...work} key={work.id} setIsPopup={setIsPopup} />;
           })}
       </ul>
     </div>

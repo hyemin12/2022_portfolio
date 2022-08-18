@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import LanguageIcon from "@mui/icons-material/Language";
 import AspectRatioIcon from "@mui/icons-material/AspectRatio";
 
-import { ProjectProps } from "../type";
+import { PopupProps, ProjectProps } from "../type";
 import styles from "./ProjectItem.module.css";
 
-const ProjectItem = (item: ProjectProps) => {
+const ProjectItem = (item: ProjectProps, { setIsPopup }: PopupProps) => {
   return (
     <>
       <li key={item.id} className={styles.item}>

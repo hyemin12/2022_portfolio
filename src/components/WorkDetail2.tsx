@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { data } from "../data";
 
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 import styles from "./WorkDetail2.module.css";
 import Swiper from "./Slider";
@@ -16,7 +17,10 @@ function WorkDetail2() {
   return (
     <>
       {item && (
-        <>
+        <div className={styles.detail_wrapper}>
+          <div>
+            <ArrowBackIosIcon />
+          </div>
           <div
             className={styles.title_wrapper}
             style={{ backgroundImage: `url('../assets/${item.id}.png')` }}
@@ -52,13 +56,6 @@ function WorkDetail2() {
             </div>
           </div>
           <div className={styles.container}>
-            <div className={styles.list_wrapper}>
-              <li>프로젝트 제작자: 고혜민</li>
-              <li>목록을</li>
-              <li>목록을</li>
-              <li>목록을</li>
-              <li>목록을</li>
-            </div>
             <div>
               <div className={styles.section}>
                 {item.describtion.map((a) => (
@@ -85,10 +82,7 @@ function WorkDetail2() {
               </div>
             </div>
           </div>
-          <div className={styles.container}>
-            <Swiper detailImg={item.detailImg} />
-          </div>
-        </>
+        </div>
       )}
     </>
   );
