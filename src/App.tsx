@@ -13,9 +13,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/works/:id" element={<WorkDetail2 />}></Route>
-          <Route path="/works" element={<ProjectPage />}></Route>
+          <Route path="/works/*" element={<ProjectPage />}></Route>
           <Route path="/portfolio/:id" element={<WorkDetail2 />}></Route>
-          <Route path="/portfolio" element={<WorkPage />}></Route>
+          <Route path="/portfolio/*" element={<WorkPage />}></Route>
           <Route path="/profile" element={<ProfilePage />}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/*" element={<Error />}></Route>

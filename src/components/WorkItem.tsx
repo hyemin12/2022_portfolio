@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
 
-import { PopupProps, WorkProps } from "../type";
+import { WorkProps } from "../type";
 import styles from "./WorkItem.module.css";
 
-const WorkItem = (work: WorkProps, { setIsPopup }: PopupProps) => {
-  function handleToggle() {
-    setIsPopup(true);
-  }
+const WorkItem = (work: WorkProps) => {
   return (
     <>
       <li

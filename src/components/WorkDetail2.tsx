@@ -1,25 +1,31 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { data } from "../data";
 
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 import styles from "./WorkDetail2.module.css";
-import Swiper from "./Slider";
 
 function WorkDetail2() {
   const { id } = useParams();
+  /*item data (project에 없으면, works에서 가져오기) */
   let item;
   item = data.projects.filter((a) => a.id === id)[0];
   if (item === undefined) {
     item = data.works.filter((a) => a.id === id)[0];
   }
+  /* 뒤로가기 */
+  const navigate = useNavigate();
+  function goBack() {
+    navigate(-1);
+  }
   return (
     <>
       {item && (
         <div className={styles.detail_wrapper}>
-          <div>
+          <div className={styles.btn_back} onClick={goBack}>
             <ArrowBackIosIcon />
+            뒤로가기
           </div>
           <div
             className={styles.title_wrapper}

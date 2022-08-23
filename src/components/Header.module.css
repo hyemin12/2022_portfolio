@@ -61,12 +61,14 @@
     background-color: #fff;
     padding-top: 3em;
     position: absolute;
+    top: -2px;
     left: 0;
     z-index: 8;
   }
   .nav {
     display: block;
     width: 300px;
+    padding: 50px 0 20px 0;
     z-index: 8;
   }
   .nav_item {
@@ -78,7 +80,7 @@
   .social {
     width: 300px;
     justify-content: start;
-    padding: 2em 3em;
+    padding: 1em 3em;
   }
   .social_icon {
     font-size: 0.8em;

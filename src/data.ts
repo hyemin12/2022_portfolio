@@ -22,7 +22,6 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/vanilla-starbucks-app",
       url: "https://starbucks-responsive-app-ee135b.netlify.app",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "Vanilla JS",
@@ -40,7 +39,6 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/vanillaJS-paint-app",
       url: "https://hyemin12.github.io/vanillaJS-paint-app/",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
 
     {
@@ -59,7 +57,6 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/web-design-portfolio/01Stranger2/",
       url: "https://hyemin12.github.io/web-design-portfolio/01Stranger2/",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "Vanilla JS",
@@ -79,7 +76,6 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/vanillaJS-chrome-app",
       url: "https://hyemin12.github.io/vanillaJS-chrome-app/",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "React",
@@ -97,7 +93,6 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/react-firebase-twitter",
       url: "준비중입니다.",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "React",
@@ -121,7 +116,6 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/gomin-talk-app",
       url: "https://wizardly-hermann-7fecb3.netlify.app/",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "ect",
@@ -133,7 +127,6 @@ export const data = {
       date: "2020-05-27",
       tool: ["Photoshop"],
       url: "https://github.com/hyemin12/react-dashboard-app2/blob/master/public/img/portfolio/lottecard2.jpg?raw=true",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "ect",
@@ -145,7 +138,6 @@ export const data = {
       date: "2020-03-20",
       tool: ["Photoshop"],
       url: "https://github.com/hyemin12/react-dashboard-app2/blob/master/public/img/portfolio/travel2.jpg?raw=true",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "jQuery",
@@ -158,7 +150,6 @@ export const data = {
       tool: ["HTML", "CSS", "jQuery", "git-pahge", "Photoshop"],
       git: "https://github.com/hyemin12/web-design-portfolio/04Melon/",
       url: "https://hyemin12.github.io/web-design-portfolio/04Melon/",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "Vanilla JS",
@@ -173,7 +164,6 @@ export const data = {
       ect: "https://html5up.net/read-only",
       git: "https://github.com/hyemin12/responsive-webstie-readOnly",
       url: "https://hyemin12.github.io/responsive-webstie-readOnly/",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     {
       filter: "Vanilla JS",
@@ -188,7 +178,6 @@ export const data = {
       ect: "https://html5up.net/massively",
       git: "https://github.com/hyemin12/responsive-webstie-massively",
       url: "https://hyemin12.github.io/responsive-webstie-massively/",
-      detailImg: [],
     },
     {
       filter: "Vanilla JS",
@@ -201,7 +190,6 @@ export const data = {
       ect: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbimORE%2FbtrE8N156Ne%2FEE9eIvq1Zd9k414O3vNH80%2Fimg.jpg",
       git: "https://github.com/hyemin12/responsive-webstie-funnyFlakes",
       url: "https://hyemin12.github.io/responsive-webstie-funnyFlakes/",
-      detailImg: [],
     },
     {
       filter: "Vanilla JS",
@@ -216,7 +204,6 @@ export const data = {
       ect: "https://html5up.net/forty",
       git: "https://github.com/hyemin12/responsive-webstie-forty/",
       url: "https://hyemin12.github.io/responsive-webstie-forty/",
-      detailImg: [],
     },
   ],
   works: [
@@ -243,7 +230,6 @@ export const data = {
       git: "https://github.com/hyemin12/react-movie-app",
       url: "https://react-movie-app-1f5ff8.netlify.app/",
       bgColor: "#e9edec",
-      detailImg: ["movie1", "movie2", "movie3"],
     },
     // {
     //   filter: "Typescript",
@@ -282,7 +268,6 @@ export const data = {
       git: "https://github.com/hyemin12/typescript-todo-app",
       url: "https://hm-tsc-todo-app.netlify.app",
       bgColor: "#d9e4eb",
-      detailImg: [],
     },
 
     {
@@ -334,7 +319,6 @@ export const data = {
       git: "https://github.com/hyemin12/react-dashboard-app2",
       url: "https://lucid-yonath-d614bb.netlify.app/",
       bgColor: "#f3e7e9",
-      detailImg: [],
     },
   ],
   social: [
