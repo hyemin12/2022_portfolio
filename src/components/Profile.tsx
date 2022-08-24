@@ -3,8 +3,9 @@ import SchoolIcon from "@mui/icons-material/School";
 import EmailIcon from "@mui/icons-material/Email";
 import EventIcon from "@mui/icons-material/Event";
 
-import Typeit from "./Typeit";
-import styles from "./Profile.module.css";
+import Intro from "./Intro";
+// import Typeit from "./Typeit";
+import styles from "../css/Profile.module.css";
 
 function Profile() {
   const skillDevelop = [
@@ -60,7 +61,8 @@ function Profile() {
   ];
   return (
     <div className="w1200">
-      <div
+      <Intro />
+      {/* <div
         className={styles.intro}
         style={{ backgroundImage: "url(assets/bg.jpg)" }}
       >
@@ -73,9 +75,8 @@ function Profile() {
         </div>
         <div className={styles.intro_text}>
           <h4 className={styles.hyemin}>고혜민</h4>
-          <Typeit />
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.article}>
         <ul className={styles.wrapper}>

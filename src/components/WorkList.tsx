@@ -1,13 +1,12 @@
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
 
 import { data } from "../data";
-import WorkItem from "./WorkItem";
-import styles from "./WorkList.module.css";
+import WorkItem from "../components/WorkItem";
 
-const WorkList = () => {
+import styles from "../css/WorkList.module.css";
+
+function WorkList() {
   const state = data.works;
-
   return (
     <div className={classNames(styles.list_wrapper, "w1200")}>
       <div className={styles.title_wrapper}>
@@ -22,6 +21,5 @@ const WorkList = () => {
       </ul>
     </div>
   );
-};
-
+}
 export default WorkList;

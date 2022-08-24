@@ -5,7 +5,7 @@ import ProfilePage from "./pages/ProfilePage";
 import ProjectPage from "./pages/ProjectPage";
 // import DetailPage from "./pages/DetailPage";
 import Error from "./pages/Error";
-import WorkDetail2 from "./components/WorkDetail2";
+import WorkDetail2 from "./components/WorkDetail";
 
 function App() {
   return (

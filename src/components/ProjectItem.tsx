@@ -4,7 +4,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import AspectRatioIcon from "@mui/icons-material/AspectRatio";
 
 import { ProjectProps } from "../type";
-import styles from "./ProjectItem.module.css";
+import styles from "../css/ProjectItem.module.css";
 
 const ProjectItem = (item: ProjectProps) => {
   return (

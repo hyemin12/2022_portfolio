@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 import { data } from "../data";
 import ProjectItem from "./ProjectItem";
-import styles from "./ProjectList.module.css";
+import styles from "../css/ProjectList.module.css";
 
 const ProjectList = () => {
   const filters = ["All", "React", "Vanilla JS", "jQuery", "ect"];

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Header from "./Header";
 import Footer from "./Footer";
-import "./Layout.css";
+import "../css/Layout.css";
 
 const Layout = (props: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(true);

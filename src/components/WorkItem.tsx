@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { WorkProps } from "../type";
-import styles from "./WorkItem.module.css";
+import styles from "../css/WorkItem.module.css";
 
 const WorkItem = (work: WorkProps) => {
   return (

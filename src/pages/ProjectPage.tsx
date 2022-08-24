@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import Layout from "../components/Layout";
 import ProjectList from "../components/ProjectList";
-import WorkDetail2 from "../components/WorkDetail2";
 
-function PortfolioTemplate() {
+function PortfolioPage() {
   return (
     <Layout>
       <ProjectList />
@@ -11,4 +9,4 @@ function PortfolioTemplate() {
   );
 }
 
-export default PortfolioTemplate;
+export default PortfolioPage;

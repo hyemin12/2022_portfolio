@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 import Nav from "./Nav";
-import styles from "./Header.module.css";
+import styles from "../css/Header.module.css";
 
 const Header = () => {
   const isMobile = useMediaQuery({ maxWidth: 953 });
