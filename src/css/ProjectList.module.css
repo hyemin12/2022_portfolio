@@ -13,6 +13,7 @@
 .title_wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2.5em 0 3.5em 0;
 }
 .select {
@@ -22,4 +23,10 @@
 .select:focus {
   border: 1px solid #333;
   outline: none;
+}
+.btn_link {
+  transition: 0.3s;
+}
+.btn_link:hover {
+  color: #fccb00;
 }

@@ -15,6 +15,7 @@ export interface WorkProps {
   filter: string;
   id: string;
   title: string;
+
   describtion: string[];
   date: string;
   tool: string[];

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import classNames from "classnames";
 
@@ -14,6 +14,7 @@ import styles from "../css/Header.module.css";
 const Header = () => {
   const isMobile = useMediaQuery({ maxWidth: 953 });
   const [isNav, setNav] = useState(false);
+
   const socials = [
     {
       name: "깃허브",

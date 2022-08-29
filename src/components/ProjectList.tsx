@@ -1,17 +1,22 @@
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-import { data } from "../data";
+import { ProjectProps, WorkProps } from "../type";
 import ProjectItem from "./ProjectItem";
+
 import styles from "../css/ProjectList.module.css";
 
-const ProjectList = () => {
+const ProjectList = (projectData: ProjectProps[] | WorkProps[]) => {
+  const stateInit = Object.values(projectData);
+
   const filters = ["All", "React", "Vanilla JS", "jQuery", "ect"];
-  const [state, setState] = useState(data.projects);
+
+  const [state, setState] = useState(stateInit);
 
   function handleFilter(event: React.ChangeEvent<HTMLSelectElement>) {
     const a = event.target.value;
-    const init = data.projects;
+    const init = stateInit;
     if (a === "All") {
       setState(init);
     } else if (a) {
@@ -25,13 +30,19 @@ const ProjectList = () => {
     <div className={classNames(styles.list_wrapper, "w1200")}>
       <div className={styles.title_wrapper}>
         <h2>개인작업물</h2>
-        <select className={styles.select} onChange={handleFilter}>
-          {filters.map((a, i) => (
-            <option className={styles.filter_item} key={i} value={a}>
-              {a}
-            </option>
-          ))}
-        </select>
+        {state.length > 4 ? (
+          <select className={styles.select} onChange={handleFilter}>
+            {filters.map((a, i) => (
+              <option className={styles.filter_item} key={i} value={a}>
+                {a}
+              </option>
+            ))}
+          </select>
+        ) : (
+          <Link to="/works" className={styles.btn_link}>
+            더보기 +
+          </Link>
+        )}
       </div>
 
       <ul className={styles.project_wrapper}>

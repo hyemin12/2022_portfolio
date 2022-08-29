@@ -60,9 +60,10 @@
     height: 100vh;
     background-color: #fff;
     padding-top: 3em;
-    position: absolute;
+    position: fixed;
     top: -2px;
-    left: 0;
+    left: 0px;
+    transition: 0.3s;
     z-index: 8;
   }
   .nav {
@@ -92,7 +93,7 @@
     z-index: 9;
   }
   .close_btn {
-    position: absolute;
+    position: fixed;
     top: 24px;
     left: 50px;
     cursor: pointer;
