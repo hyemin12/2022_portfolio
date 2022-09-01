@@ -232,11 +232,13 @@ export const data = {
       title: "영화검색사이트",
       describtion: [
         "imdb api를 이용해서 인기 영화, 상영예정 영화, 평점이 높은 영화목록을 가져오고 영화 상세정보를 볼 수 있는 프로젝트입니다.",
+        "async/await 함수를 이용하여 비동기 방식으로 페이지가 라우팅되고 난 이후 api를 요청하고 가져오도록 하였습니다. 또한 context API를 활용하여 검색 기능을 구현하였습니다.",
       ],
       date: "2022-03-08",
       tool: [
         "REACT",
         "react-router-dom",
+        "context API",
         "imdb API",
         "axios",
         "Sass",

@@ -9,22 +9,24 @@ function Intro() {
   return (
     <div>
       <div className={styles.container}>
-        <SlickSlider>
-          <div className={styles.image}>
-            <img
-              src="./assets/hyemin.jpg"
-              alt="고혜민"
-              className={styles.img}
-            />
-          </div>
-          <div className={styles.image}>
-            <img
-              src="./assets/hyemin2.png"
-              alt="고혜민"
-              className={styles.img}
-            />
-          </div>
-        </SlickSlider>
+        <div className={styles.image_wrapper}>
+          <SlickSlider>
+            <div className={styles.image}>
+              <img
+                src="./assets/hyemin.jpg"
+                alt="고혜민"
+                className={styles.img}
+              />
+            </div>
+            <div className={styles.image}>
+              <img
+                src="./assets/hyemin2.png"
+                alt="고혜민"
+                className={styles.img}
+              />
+            </div>
+          </SlickSlider>
+        </div>
         <div className={classNames(styles.text_wrapper, "intro_title_wrapper")}>
           <SlickSlider>
             <div className={styles.title}>

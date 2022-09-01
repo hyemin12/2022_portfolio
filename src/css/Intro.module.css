@@ -9,16 +9,11 @@
   border-bottom: 1px solid #eee;
 }
 
-.image {
-  flex-shrink: 0;
-  width: 400px;
-}
 .img {
   width: 100%;
   object-fit: cover;
 }
 .text_wrapper {
-  flex-shrink: 1;
   padding-top: 50px;
   line-height: 1.6;
 }
@@ -28,7 +23,8 @@
   font-size: 1.2em;
 }
 .desc {
-  /* min-width: 40px; */
+  width: 100%;
+  padding-right: 20px;
   margin-bottom: 20px;
 }
 .btn_link {
