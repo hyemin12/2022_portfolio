@@ -8,6 +8,10 @@
   padding-bottom: 30px;
   border-bottom: 1px solid #f4f4f4;
 }
+.project_wrapper.start {
+  justify-content: start;
+  gap: 20px;
+}
 @media screen and (min-width: 1024px) {
 }
 .title_wrapper {
@@ -21,7 +25,7 @@
   border-bottom: 1px solid #333;
 }
 .select:focus {
-  border: 1px solid #333;
+  border-bottom: 1px solid #333;
   outline: none;
 }
 .btn_link {

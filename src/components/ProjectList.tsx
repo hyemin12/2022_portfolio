@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import { ProjectProps, WorkProps } from "../type";
 import ProjectItem from "./ProjectItem";
@@ -8,10 +8,10 @@ import ProjectItem from "./ProjectItem";
 import styles from "../css/ProjectList.module.css";
 
 const ProjectList = (projectData: ProjectProps[] | WorkProps[]) => {
+  const location = useLocation();
   const stateInit = Object.values(projectData);
 
   const filters = ["All", "React", "Vanilla JS", "jQuery", "ect"];
-
   const [state, setState] = useState(stateInit);
 
   function handleFilter(event: React.ChangeEvent<HTMLSelectElement>) {
@@ -24,13 +24,16 @@ const ProjectList = (projectData: ProjectProps[] | WorkProps[]) => {
       setState(newArr);
     }
   }
-
-  useEffect(() => {}, [state]);
+  console.log(state);
   return (
     <div className={classNames(styles.list_wrapper, "w1200")}>
       <div className={styles.title_wrapper}>
         <h2>개인작업물</h2>
-        {state.length > 4 ? (
+        {location.pathname === "/" && state.length < 4 ? (
+          <Link to="/works" className={styles.btn_link}>
+            더보기 +
+          </Link>
+        ) : (
           <select className={styles.select} onChange={handleFilter}>
             {filters.map((a, i) => (
               <option className={styles.filter_item} key={i} value={a}>
@@ -38,14 +41,15 @@ const ProjectList = (projectData: ProjectProps[] | WorkProps[]) => {
               </option>
             ))}
           </select>
-        ) : (
-          <Link to="/works" className={styles.btn_link}>
-            더보기 +
-          </Link>
         )}
       </div>
 
-      <ul className={styles.project_wrapper}>
+      <ul
+        className={classNames(
+          styles.project_wrapper,
+          state.length < 3 && styles.start
+        )}
+      >
         {state &&
           state.map((item) => {
             return <ProjectItem {...item} key={item.id} />;
