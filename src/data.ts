@@ -1,6 +1,46 @@
 export const data = {
   projects: [
     {
+      filter: "Typescript",
+      id: "tsc-todo",
+      title: "투두리스트",
+      describtion: [
+        "타입스크립트를 공부하고 처음으로 진행한 프로젝트입니다.",
+        "액션 생성 함수를 작성하는 방법, 액션 객체의 타입을 지정하는 방법 등 타입스크립트 리덕스에 대하여 공부하였습니다. 또한 store 형성할 때 createStore() 가 오류가 생겨, 새롭게 변경된 configureStore() 훅에 대해 공부하였습니다.",
+        "혼자서 타입스크립트 프로젝트를 제작해서 많이 어려웠지만 문제를 해결하는 방법, 타입스크립트 기초에 대해 공부할 수 있어서 좋았습니다.",
+      ],
+      date: "2022-03-15",
+      tool: ["React", "Typescript", "Redux", "Sass", "netlify"],
+      features: [
+        "1. 할일 등록 및 삭제 기능",
+        "2. 남은 할일 갯수 확인",
+        "3. 현재 날짜 확인",
+        "4. 할일 완료 여부 (체크박스)",
+      ],
+
+      git: "https://github.com/hyemin12/typescript-todo-app",
+      url: "https://hm-tsc-todo-app.netlify.app",
+    },
+    {
+      filter: "Vanilla JS",
+      id: "moment",
+      title: "크롬 앱",
+      describtion: [
+        "노마드코더의 바닐라JS 크롬 앱을 클론 코딩한 프로젝트입니다. 크롬앱을 처음 사용하는 이용자는 이름을 입력하면 사용이 가능하며 날씨 정보, 랜덤으로 나오는 명언, 투두리스트가 화면에 출력됩니다.",
+        "새로고침을 했을 때, 데이터가 리셋되지 않도록 데이터를 로컬스토리지에 저장하고, 가져오고, 삭제하는 방법에 대해 공부하였습니다.",
+      ],
+      date: "2022-02-21",
+      tool: ["HTML", "CSS", "Javascript", "open weather api", "gh-pages"],
+      features: [
+        "1. open weather api를 활용한 날씨 정보 확인",
+        "2. local storage의 username 값을 확인하여 로그인 / 홈 화면을 나타냄",
+        "3. 페이지가 새로고침될 때마다 새로운 명언 & 배경이미지가 나타남",
+        "4. 투두 리스트 작성",
+      ],
+      git: "https://github.com/hyemin12/vanillaJS-chrome-app",
+      url: "https://hyemin12.github.io/vanillaJS-chrome-app/",
+    },
+    {
       filter: "Vanilla JS",
       id: "starbucks",
       title: "Starbucks 2017",
@@ -22,63 +62,6 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/vanilla-starbucks-app",
       url: "https://starbucks-responsive-app-ee135b.netlify.app",
-    },
-    {
-      filter: "Typescript",
-      id: "mytravel",
-      title: "여행일정앱",
-      describtion: [
-        "타입스크립트와 firebase로 작성된 포트폴리오 프로젝트입니다. ",
-        "firebase에서 데이터를 가져와 화면에 출력되도록 설정하였고, gh-pages를 활용하여 배포하였습니다. 데이터를 가져올 때 orderBy를 사용하여 오름차순으로 정렬하여 일정이 순서대로 출력될 수 있도록 하였습니다.",
-        "또한 카카오지도 api를 활용하여 지도를 구현하였습니다. 각각 장소의 위치를 marker를 활용해 표시해 일정에 참고할 수 있도록 하였습니다.",
-        "이 프로젝트를 제작하며 리액트에서 카카오지도 api를 가져와서 사용하는 법과 useRef를 사용하는 법에 대해 공부하였다. 추후에는 다양한 여행들을 확인할 수 있도록 home 화면을 재 구성하고, 지도를 클릭하였을 때 확대/축소하는 버튼이 잘리는 것을 수정 할 것이다. 또한 보안을 위해 API KEY를 숨기는 방법에 대해 공부할 것이다.",
-      ],
-      date: "2022-08-08",
-      tool: ["react", "Typescript", "firebase", "kakao-maps-api", "gh-pages"],
-      features: [
-        "1. 날짜별 여행 일정 확인",
-        "2. 지도 marker를 통한 동선 및 장소 확인",
-      ],
-      git: "https://github.com/hyemin12/typescript-hyemin-app",
-      url: "https://hyemin12.github.io/typescript-hyemin-app",
-      bgColor: "#eae2cf",
-    },
-
-    {
-      filter: "jQuery",
-      id: "stranger",
-      title: "비밀의 숲2 프로모션",
-      describtion: [
-        "비밀의 숲2 방영 기념 프로모션 페이지를 제작하였습니다. jQery 풀페이지 플러그인을 사용하여 제작하였고, 비밀의 숲만의 미스테리한, 어두운 분위기를 디자인에 녹이고자 하였습니다.",
-      ],
-      date: "2020-08-15",
-      tool: ["HTML", "CSS", "jQuery", "gh-pages", "Photoshop"],
-      features: [
-        "1. 등장인물 소개",
-        "2. 관련 사진 및 동영상 확인",
-        "3. 시즌 줄거리 확인",
-      ],
-      git: "https://github.com/hyemin12/web-design-portfolio/01Stranger2/",
-      url: "https://hyemin12.github.io/web-design-portfolio/01Stranger2/",
-    },
-    {
-      filter: "Vanilla JS",
-      id: "moment",
-      title: "크롬 앱",
-      describtion: [
-        "노마드코더의 바닐라JS 크롬 앱을 클론 코딩한 프로젝트입니다. 크롬앱을 처음 사용하는 이용자는 이름을 입력하면 사용이 가능하며 날씨 정보, 랜덤으로 나오는 명언, 투두리스트가 화면에 출력됩니다.",
-        "새로고침을 했을 때, 데이터가 리셋되지 않도록 데이터를 로컬스토리지에 저장하고, 가져오고, 삭제하는 방법에 대해 공부하였습니다.",
-      ],
-      date: "2022-02-21",
-      tool: ["HTML", "CSS", "Javascript", "open weather api", "gh-pages"],
-      features: [
-        "1. open weather api를 활용한 날씨 정보 확인",
-        "2. local storage의 username 값을 확인하여 로그인 / 홈 화면을 나타냄",
-        "3. 페이지가 새로고침될 때마다 새로운 명언 & 배경이미지가 나타남",
-        "4. 투두 리스트 작성",
-      ],
-      git: "https://github.com/hyemin12/vanillaJS-chrome-app",
-      url: "https://hyemin12.github.io/vanillaJS-chrome-app/",
     },
     {
       filter: "Vanilla JS",
@@ -156,6 +139,24 @@ export const data = {
       ],
       git: "https://github.com/hyemin12/gomin-talk-app",
       url: "https://wizardly-hermann-7fecb3.netlify.app/",
+    },
+
+    {
+      filter: "jQuery",
+      id: "stranger",
+      title: "비밀의 숲2 프로모션",
+      describtion: [
+        "비밀의 숲2 방영 기념 프로모션 페이지를 제작하였습니다. jQery 풀페이지 플러그인을 사용하여 제작하였고, 비밀의 숲만의 미스테리한, 어두운 분위기를 디자인에 녹이고자 하였습니다.",
+      ],
+      date: "2020-08-15",
+      tool: ["HTML", "CSS", "jQuery", "gh-pages", "Photoshop"],
+      features: [
+        "1. 등장인물 소개",
+        "2. 관련 사진 및 동영상 확인",
+        "3. 시즌 줄거리 확인",
+      ],
+      git: "https://github.com/hyemin12/web-design-portfolio/01Stranger2/",
+      url: "https://hyemin12.github.io/web-design-portfolio/01Stranger2/",
     },
     {
       filter: "ect",
@@ -295,8 +296,8 @@ export const data = {
     },
     {
       filter: "Typescript",
-      id: "tsc-todo",
-      title: "투두리스트",
+      id: "tsc-shop",
+      title: "쇼핑몰",
       describtion: [
         "타입스크립트를 공부하고 처음으로 진행한 프로젝트입니다.",
         "액션 생성 함수를 작성하는 방법, 액션 객체의 타입을 지정하는 방법 등 타입스크립트 리덕스에 대하여 공부하였습니다. 또한 store 형성할 때 createStore() 가 오류가 생겨, 새롭게 변경된 configureStore() 훅에 대해 공부하였습니다.",
