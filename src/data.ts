@@ -24,21 +24,24 @@ export const data = {
       url: "https://starbucks-responsive-app-ee135b.netlify.app",
     },
     {
-      filter: "Vanilla JS",
-      id: "paint",
-      title: "그림판",
+      filter: "Typescript",
+      id: "mytravel",
+      title: "여행일정앱",
       describtion: [
-        "노마드코더의 바닐라JS 그림판을 클론 코딩한 프로젝트입니다. 캔버스에서 그림을 그릴 수 있으고, 이미지를 저장할 수 있습니다. ",
+        "타입스크립트와 firebase로 작성된 포트폴리오 프로젝트입니다. ",
+        "firebase에서 데이터를 가져와 화면에 출력되도록 설정하였고, gh-pages를 활용하여 배포하였습니다. 데이터를 가져올 때 orderBy를 사용하여 오름차순으로 정렬하여 일정이 순서대로 출력될 수 있도록 하였습니다.",
+        "또한 카카오지도 api를 활용하여 지도를 구현하였습니다. 각각 장소의 위치를 marker를 활용해 표시해 일정에 참고할 수 있도록 하였습니다.",
+        "이 프로젝트를 제작하며 리액트에서 카카오지도 api를 가져와서 사용하는 법과 useRef를 사용하는 법에 대해 공부하였다. 추후에는 다양한 여행들을 확인할 수 있도록 home 화면을 재 구성하고, 지도를 클릭하였을 때 확대/축소하는 버튼이 잘리는 것을 수정 할 것이다. 또한 보안을 위해 API KEY를 숨기는 방법에 대해 공부할 것이다.",
       ],
-      date: "2022-02-22",
-      tool: ["HTML", "CSS", "Javascript", "Canvas events", "gh-pages"],
+      date: "2022-08-08",
+      tool: ["react", "Typescript", "firebase", "kakao-maps-api", "gh-pages"],
       features: [
-        "1. 그리기 모드 / 채우기(페인트) 모드 선택 가능 ",
-        "2. 브러쉬 크기 및 색상 선택 가능",
-        "3. save 버튼을 통해 그린 이미지 저장 가능",
+        "1. 날짜별 여행 일정 확인",
+        "2. 지도 marker를 통한 동선 및 장소 확인",
       ],
-      git: "https://github.com/hyemin12/vanillaJS-paint-app",
-      url: "https://hyemin12.github.io/vanillaJS-paint-app/",
+      git: "https://github.com/hyemin12/typescript-hyemin-app",
+      url: "https://hyemin12.github.io/typescript-hyemin-app",
+      bgColor: "#eae2cf",
     },
 
     {
@@ -77,6 +80,24 @@ export const data = {
       git: "https://github.com/hyemin12/vanillaJS-chrome-app",
       url: "https://hyemin12.github.io/vanillaJS-chrome-app/",
     },
+    {
+      filter: "Vanilla JS",
+      id: "paint",
+      title: "그림판",
+      describtion: [
+        "노마드코더의 바닐라JS 그림판을 클론 코딩한 프로젝트입니다. 캔버스에서 그림을 그릴 수 있으고, 이미지를 저장할 수 있습니다. ",
+      ],
+      date: "2022-02-22",
+      tool: ["HTML", "CSS", "Javascript", "Canvas events", "gh-pages"],
+      features: [
+        "1. 그리기 모드 / 채우기(페인트) 모드 선택 가능 ",
+        "2. 브러쉬 크기 및 색상 선택 가능",
+        "3. save 버튼을 통해 그린 이미지 저장 가능",
+      ],
+      git: "https://github.com/hyemin12/vanillaJS-paint-app",
+      url: "https://hyemin12.github.io/vanillaJS-paint-app/",
+    },
+
     {
       filter: "React",
       id: "twitter",

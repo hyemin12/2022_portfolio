@@ -35,6 +35,9 @@ li {
 p {
   padding: 5px 0;
 }
+::selection {
+  background-color: rgb(252, 203, 0);
+}
 footer {
   display: flex;
   justify-content: center;
