@@ -4,7 +4,6 @@ import EmailIcon from "@mui/icons-material/Email";
 import EventIcon from "@mui/icons-material/Event";
 
 import Intro from "./Intro";
-// import Typeit from "./Typeit";
 import styles from "../css/Profile.module.css";
 
 function Profile() {

@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import WorkPage from "./pages/WorkPage";
 import ProfilePage from "./pages/ProfilePage";
 import ProjectPage from "./pages/ProjectPage";
-// import DetailPage from "./pages/DetailPage";
 import Error from "./pages/Error";
 import WorkDetail2 from "./components/WorkDetail";
 

@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 function SlickSlider(props: { children: React.ReactNode }) {
   const settings = {
     arrows: false,
-    // dots: false,
     speed: 5000,
     infinite: true,
     fade: true,
