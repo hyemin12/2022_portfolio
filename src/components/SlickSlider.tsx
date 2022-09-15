@@ -11,7 +11,7 @@ function SlickSlider(props: { children: React.ReactNode }) {
     infinite: true,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
