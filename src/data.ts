@@ -118,30 +118,6 @@ export const data = {
       detailImg: ["wordle1", "wordle2"],
     },
     {
-      filter: "React",
-      id: "gomintalk",
-      title: "리슨 클론 코딩",
-      describtion: [
-        "요즘 뜨고 있는 Lysn bubble을 클론코딩한 프로젝트입니다. 모바일 버전만 제공하기때문에, 550px 이상에서는 화면을 줄여달라는 화면만 출력됩니다. 프로필창에서 친구를 클릭하면 프로필 이미지 화면이 나타나고, 채팅을 보낼 수 있습니다. ",
-        "react router dom을 공부하며 제작했던 프로젝트라 다양한 페이지들로 나누어져있습니다. 채팅방을 만들며 데이터 구조가 어떻게 짜여져야하는지에 대하여 고민을 하며, 아티스트 채팅과 답장 기능을 구현했습니다. 하지만 채팅방 목록에서 가장 최근 대화를 가져올 때 문제가 생겼습니다. 앞으로 공부를 더 해서 채팅방 기능을 완벽하게 구현하고 싶습니다.",
-      ],
-      date: "2022-05-20",
-      tool: [
-        "React",
-        "react-router-dom",
-        "Sass",
-        "react-live-clock",
-        "netlify",
-      ],
-      features: [
-        "1. 내 프로필과 친구들 목록 확인",
-        "2. 채팅방 - 친구와 주고받은 메세지 확인",
-      ],
-      git: "https://github.com/hyemin12/gomin-talk-app",
-      url: "https://wizardly-hermann-7fecb3.netlify.app/",
-    },
-
-    {
       filter: "jQuery",
       id: "stranger",
       title: "비밀의 숲2 프로모션",
@@ -180,18 +156,7 @@ export const data = {
       tool: ["Photoshop"],
       url: "https://github.com/hyemin12/react-dashboard-app2/blob/master/public/img/portfolio/travel2.jpg?raw=true",
     },
-    {
-      filter: "jQuery",
-      id: "melon",
-      title: "음악스트리밍 멜론",
-      describtion: [
-        "인기차트가 사라진 멜론 음악 스트리밍 사이트를 리뉴얼하였다. 작게 나누어져있던 콘텐츠들을 크고 심플한 레이아웃에 맞춰 배치하였다. 또한 멜론 티켓과 연계하여 공연 배너 등 다양한 콘텐츠를 노출시키고자 하였다.",
-      ],
-      date: "2020-07-21",
-      tool: ["HTML", "CSS", "jQuery", "gh-pages", "Photoshop"],
-      git: "https://github.com/hyemin12/web-design-portfolio/04Melon/",
-      url: "https://hyemin12.github.io/web-design-portfolio/04Melon/",
-    },
+
     {
       filter: "Vanilla JS",
       id: "responsive1",
