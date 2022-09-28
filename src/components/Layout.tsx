@@ -23,7 +23,7 @@ const Layout = (props: { children: React.ReactNode }) => {
           <div>{props.children}</div>
 
           <div className="btn_top" onClick={movetoTop}>
-            <p>↑ Back to Top</p>
+            <p>↑ 맨 위로 올라가기</p>
           </div>
           <Footer />
         </>

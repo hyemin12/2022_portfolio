@@ -252,8 +252,10 @@ export const data = {
       date: "2022-08-08",
       tool: ["react", "Typescript", "firebase", "kakao-maps-api", "gh-pages"],
       features: [
-        "1. 날짜별 여행 일정 확인",
-        "2. 지도 marker를 통한 동선 및 장소 확인",
+        "1. firebase auth를 활용한 회원가입, 로그인, 로그아웃 기능",
+        "2. firebase database를 활용한 데이터 관리 (상세일정 추가, 수정, 삭제 기능)",
+        "2. 날짜별 여행 일정 확인",
+        "3. 지도 marker를 통한 동선 및 장소 확인",
       ],
       git: "https://github.com/hyemin12/typescript-hyemin-app",
       url: "https://hyemin12.github.io/typescript-hyemin-app",
@@ -265,7 +267,7 @@ export const data = {
       title: "쇼핑몰",
       describtion: [
         "타입스크립트로 제작된 프로젝트입니다. 장바구니에 상품을 담고, 삭제할 수 있는 기능을 가지고 있습니다.",
-        "createSlice()를 사용하여 리듀서를 생성하였고, 각 리듀서의 state와 action을 관리하였습니다. 장바구니가 비어있을 때, 장바구니 state에 해당 아이템의 존재여부를 확인하고 존재할 경우 갯수가 추가되고 장바구니에 해당 아이템이 존재하지 않으면 장바구니에 추가하도록 설정했습니다. 또한 useSelector를 이용하여 state를 가져왔고, 생성한 action을 useDispatch를 사용하여 발생시켰습니다. ",
+        "createSlice()를 사용하여 리듀서를 생성하였고, 각 리듀서의 state와 action을 관리하였습니다. 장바구니가 비어있을 때, 장바구니 state에 해당 아이템의 존재여부를 확인하고 존재할 경우 갯수가 추가되고 장바구니에 해당 아이템이 존재하지 않으면 장바구니에 추가하도록 설정했습니다. 또한 useSelector를 이용하여 state를 가져왔고, 생성한 action을 useDispatch를 사용하여 발생시켰습니다.",
         "새로운 훅을 이용하여 액션을 생성하는 방법을 배웠고, 조건에 따라 컴포넌트의 내용을 다르게 보여주는 방법에 대해서도 공부했습니다. 장바구니 state를 빈 배열로 설정할 경우 타입오류가 나타나는 것에 대해서는 문제해결을 하지 못하였습니다. 이부분 역시 관련해서  해결방법을 찾아 수정할 예정입니다.",
       ],
       date: "2022-09-01",
@@ -323,4 +325,102 @@ export const data = {
     { id: "social_github", url: "https://github.com/hyemin12" },
     { id: "social_blog", url: "https://hyemin-12.tistory.com/" },
   ],
+  profile: {
+    skillDevelop: [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "React",
+      "Redux",
+      "React Router Dom",
+      "SASS",
+      "CSS Module",
+      "node.js",
+      "Github",
+      "bootstrap",
+      "jQuery",
+      "netlify",
+    ],
+    skillDesign: [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Auto Cad",
+      "3d Max",
+      "Microsoft Office",
+      "한글오피스",
+    ],
+    education: [
+      {
+        title: "한번에 끝내는 프론트엔드 개발 초격차 패키지",
+        school: "패스트캠퍼스",
+        date: "2021.04 ~ 2021.10",
+        studyContent: [
+          "Git을 활용한 버전관리",
+          "자바스크립트 함수, 데이터",
+          "HTML/CSS/SCSS, display flex를 활용한 구조 설계",
+          "Bootstrap 사용 방법, 커스터마이징 하는 법",
+          "Vue 문법",
+          "React 컴포넌트, 리액트 라우터, style components, react Hook",
+          "git을 활용한 netlify 배포",
+        ],
+      },
+      {
+        title: "스마트기기 UX/UI 웹디자인 웹퍼블리셔 과정",
+        school: "하이미디어 컴퓨터학원",
+        date: "2020.04 ~ 2020.09",
+        studyContent: [
+          "웹 사이트 디자인(포토샵), 벡터디자인(일러스트)",
+          "HTML을 이용한 웹페이지 제작",
+          "자바스크립트 기초",
+          "제이쿼리, 부트스트랩, 깃허브",
+          "워드프레스, 그누보드",
+        ],
+      },
+    ],
+    certificate: [
+      { title: "정보처리기능사", issue: "한국산업인력공단", date: "2021.12" },
+      {
+        title: "컴퓨터그래픽스기능사",
+        issue: "한국산업인력공단",
+        date: "2021.12",
+      },
+      { title: "웹디자인기능사", issue: "한국산업인력공단", date: "2020.09" },
+    ],
+    experience: [
+      {
+        title: "두에이리원",
+        date: "2019.05 ~ 2020.01",
+        contents: [
+          "공연사업팀",
+          "퇴사 사유 : 경영악화로 인한 임금체불",
+          "기타 : 업직종 전환을 위해 퇴사하였으나, 전 회사에서 같이 일하던 팀의 업무를 도와주다가 입사하게 됨",
+        ],
+      },
+      {
+        title: "스타이엔티",
+        date: "2018.05~2018.12",
+        contents: ["공연사업 및 신규사업팀", "퇴사 사유 : 업직종 전환"],
+      },
+      {
+        title: "에이엔스테이지",
+        date: "2017.06 ~ 2017.12",
+        contents: ["세트미술팀", " 업무 : 방송통신대학교 방송 세트 디자인"],
+      },
+    ],
+    interview: [
+      {
+        title: "언제부터 지금의 직무에 관심을 갖게 되었나요?",
+        text: "웹디자이너 · 웹퍼블리셔 과정을 수료하면서 저는 디자인 보다는 코드를 작성해서 웹을 구현하는 것에 더 큰 매력을 느꼈습니다. 다양한 기능을 구현하고 싶어 자바스크립트에 대하여 공부를 하면서 프론트엔드의 개발에 대해 알게 되었고, 하드코딩이 아닌 백엔드의 데이터로 화면을 구성하고 기능을 동작하도록 만드는 프론트엔드 개발에 관심을 가지게 되었습니다.",
+      },
+      {
+        title: "학원을 다니지 않고, 혼자서 개발 공부를 한 이유가 있나요?",
+        text: "저 역시 웹 디자인 및 웹 퍼블리셔 과정은 학원을 다니며 공부를 했습니다. 학원을 다니며, 강의를 열심히 들어도 혼자 복습하거나 꾸준히 연습하지 않으면 제 것으로 만들기 어렵다는 것을 느꼈습니다. 그래서 개발 공부할 때에는 강의를 듣고, 그 강의를 복습하는 방식으로 공부를 했습니다.",
+      },
+      {
+        title:
+          "Github commit 기록을 보면 2021년 11월부터 2022년 1월까지 commit이 안되어 있던데 무슨 일이 있었나요?",
+        text: "정보처리기능사 자격증을 취득하기 위해 공부를 했습니다. 2021년 프론트엔드 강의를 듣고 개인 프로젝트를 제작하려고 하였으나, 강사의 코드를 그대로 따라 치기식으로 공부한 결과 혼자서 코드를 작성하는데 어려움을 느꼈습니다. 따라 무작정 강의를 듣는 것이 아닌 기초부터 차근차근 공부하고자 하였습니다. 컴퓨터공학의 기초 지식을 쌓을 수 있는 정보처리 기능사를 9월부터 12월까지 공부했으며 자격증 취득하였습니다.",
+      },
+    ],
+  },
 };

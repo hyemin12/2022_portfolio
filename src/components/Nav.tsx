@@ -4,9 +4,9 @@ import styles from "../css/Header.module.css";
 const Nav = () => {
   const navData = [
     { name: "홈", path: "/" },
+    { name: "고혜민", path: "/profile" },
     { name: "포트폴리오", path: "/portfolio" },
     { name: "개인작업물", path: "/works" },
-    { name: "고혜민", path: "/profile" },
   ];
   return (
     <ul className={styles.nav}>

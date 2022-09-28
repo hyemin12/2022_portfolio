@@ -46,7 +46,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    max-width: 1200px;
+    padding: 20px 50px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 953px) {
