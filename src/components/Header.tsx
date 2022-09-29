@@ -33,7 +33,7 @@ const Header = () => {
     },
   ];
   return (
-    <>
+    <header>
       <div className={styles.line}></div>
 
       {isMobile ? (
@@ -98,7 +98,7 @@ const Header = () => {
           </ul>
         </div>
       )}
-    </>
+    </header>
   );
 };
 export default Header;

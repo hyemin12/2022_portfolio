@@ -51,7 +51,7 @@ function Intro() {
             경험 UX에 대하여 공부하였습니다. 현재는 데이터를 가져와 화면에
             구현하고, 데이터를 서버로 보내는 기능에 대하여 공부하고 있습니다.
             <br />
-            저는{" "}
+            저는
             <span className={styles.highlight}>
               좋은 코드를 공유하는 개발자
             </span>
