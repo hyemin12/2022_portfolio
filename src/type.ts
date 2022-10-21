@@ -3,19 +3,19 @@ export interface ProjectProps {
   id: string;
   title: string;
   img?: string;
-  describtion: string[];
-  date: string;
-  tool: string[];
+  describtion?: string[];
+  date?: string;
+  tool?: string[];
   features?: string[] | undefined;
   git?: string | undefined;
-  url: string;
+  url?: string;
   ect?: string | undefined;
+  imgs?: string[];
 }
 export interface WorkProps {
   filter: string;
   id: string;
   title: string;
-
   describtion: string[];
   date: string;
   tool: string[];

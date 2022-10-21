@@ -28,7 +28,7 @@ const ProjectList = (projectData: ProjectProps[] | WorkProps[]) => {
   return (
     <div className={classNames(styles.list_wrapper, "w1200")}>
       <div className={styles.title_wrapper}>
-        <h2>개인작업물</h2>
+        <h2>공부한 내용</h2>
         {location.pathname === "/" && state.length < 4 ? (
           <Link to="/works" className={styles.btn_link}>
             더보기 +

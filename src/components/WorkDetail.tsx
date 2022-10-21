@@ -64,13 +64,12 @@ function WorkDetail() {
           <div className={styles.container}>
             <div>
               <div className={styles.section}>
-                {item.describtion.map((a) => (
-                  <p key={a}>{a}</p>
-                ))}
+                {item.describtion &&
+                  item.describtion.map((a) => <p key={a}>{a}</p>)}
               </div>
               {item.features && (
                 <div className={styles.section}>
-                  <h4 className={styles.h4_title}>기능</h4>
+                  <h4 className={styles.h4_title}>주요 업무</h4>
                   {item.features.map((a, i) => (
                     <p key={i}>{a}</p>
                   ))}
@@ -79,11 +78,12 @@ function WorkDetail() {
               <div className={styles.section}>
                 <h4 className={styles.h4_title}>사용툴</h4>
                 <div className={styles.tools}>
-                  {item.tool.map((a) => (
-                    <span className={styles.tool} key={a}>
-                      {a}
-                    </span>
-                  ))}
+                  {item.tool &&
+                    item.tool.map((a) => (
+                      <span className={styles.tool} key={a}>
+                        {a}
+                      </span>
+                    ))}
                 </div>
               </div>
             </div>

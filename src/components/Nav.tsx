@@ -6,7 +6,7 @@ const Nav = () => {
     { name: "홈", path: "/" },
     { name: "고혜민", path: "/profile" },
     { name: "포트폴리오", path: "/portfolio" },
-    { name: "개인작업물", path: "/works" },
+    { name: "공부한내용", path: "/works" },
   ];
   return (
     <ul className={styles.nav}>

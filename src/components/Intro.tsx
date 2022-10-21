@@ -65,20 +65,15 @@ function Intro() {
             있다고 생각합니다. 제가 가진 열정을 바탕으로 항상 성장하는 개발자가
             되겠습니다.
           </p>
-          {pathname === "/profile" ? (
-            <a
-              href="https://hyemin12.github.io/hm_resume/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.btn_link}
-            >
-              이력서 보러가기
-            </a>
-          ) : (
-            <Link to="/profile" className={styles.btn_link}>
-              고혜민 더 알아보기
-            </Link>
-          )}
+
+          <a
+            href="https://hyemin12.github.io/hm_resume/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.btn_link}
+          >
+            이력서 보러가기
+          </a>
         </div>
       </div>
     </div>

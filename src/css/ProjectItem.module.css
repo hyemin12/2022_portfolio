@@ -24,7 +24,7 @@
   justify-content: space-between;
 }
 .item_title {
-  width: 170px;
+  width: 200px;
   font-size: 1.1em;
   white-space: nowrap;
   text-overflow: ellipsis;

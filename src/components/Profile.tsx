@@ -2,11 +2,14 @@ import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import EmailIcon from "@mui/icons-material/Email";
 import EventIcon from "@mui/icons-material/Event";
+import NearMeIcon from "@mui/icons-material/NearMe";
 
 import { data } from "../data";
 import Intro from "./Intro";
 
 import styles from "../css/Profile.module.css";
+import TypeIt from "typeit-react";
+import { url } from "inspector";
 
 function Profile() {
   const {
@@ -20,7 +23,25 @@ function Profile() {
 
   return (
     <div className="w1200">
-      <Intro />
+      {/* <Intro /> */}
+      <div
+        className={styles.hyemin}
+        style={{ backgroundImage: `url(${"./assets/hyemin.jpg"})` }}
+      >
+        <div className={styles.typeit}>
+          <TypeIt
+            options={{
+              strings: [
+                "안녕하세요. 성실함을 바탕으로 꾸준히 성장하고자 노력하는 고혜민입니다.",
+                "저는 다양한 개인 프로젝트를 통해 이론과 실무 감각을 쌓아가는 개발자입니다.",
+                "소소한 목표를 세우고 성취하는 것을 좋아하며, ",
+                "하고자 하는 일은 꾸준히 노력해서 끝까지 해내는 끈기가 있습니다. ",
+              ],
+              speed: 50,
+            }}
+          />
+        </div>
+      </div>
 
       <div className={styles.article}>
         <ul className={styles.wrapper}>
@@ -31,6 +52,10 @@ function Profile() {
           <li className={styles.item}>
             <EventIcon className={styles.icon} />
             <p>1994년생 (만 27세)</p>
+          </li>
+          <li className={styles.item}>
+            <NearMeIcon className={styles.icon} />
+            <p>경기도 수원시</p>
           </li>
           <li className={styles.item}>
             <SchoolIcon className={styles.icon} />
@@ -68,7 +93,9 @@ function Profile() {
             </ul>
           </div>
           <div className={styles.skill_contents}>
-            <h4 className={styles.skill_subtitle}>design · ect</h4>
+            <h4 className={styles.skill_subtitle}>
+              능숙하지는 않지만 사용해 본 경험이 있는 툴
+            </h4>
             <ul className={styles.skill_list}>
               {skillDesign.map((i) => (
                 <li className={styles.skill_item} key={i}>
@@ -104,7 +131,7 @@ function Profile() {
           {certificate.map((item) => (
             <li className={styles.certificate_item} key={item.title}>
               <h4 className={styles.highlight}>{item.title}</h4>
-              <p>{item.issue}</p>
+              {/* <p>{item.issue}</p> */}
               <p>{item.date}</p>
             </li>
           ))}
@@ -115,9 +142,11 @@ function Profile() {
         {experience.map((item, i) => (
           <div className={styles.profile_content_wrapper} key={i}>
             <span>■</span>
-            <div>
-              <h4 className={styles.profile_content_h4}>{item.title}</h4>
-              <p className={styles.profile_content_date}> {item.date}</p>
+            <div style={{ display: "flex", gap: "40px" }}>
+              <div style={{ flexShrink: 0, width: "123px" }}>
+                <h4 className={styles.profile_content_h4}>{item.title}</h4>
+                <p className={styles.profile_content_date}> {item.date}</p>
+              </div>
               <ul>
                 {item.contents.map((a, i) => (
                   <li key={i}>- {a}</li>

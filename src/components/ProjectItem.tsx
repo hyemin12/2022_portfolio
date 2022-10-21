@@ -23,12 +23,16 @@ const ProjectItem = (item: ProjectProps) => {
           <div className={styles.row}>
             <h4 className={styles.item_title}>{item.title}</h4>
             <div>
-              <Link to={`/works/${item.id}`}>
-                <AspectRatioIcon className={styles.link_btn} />
-              </Link>
-              <a href={item.url} target="_blank" rel="noreferrer">
-                <LanguageIcon className={styles.link_btn} />
-              </a>
+              {item.git && (
+                <Link to={`/works/${item.id}`}>
+                  <AspectRatioIcon className={styles.link_btn} />
+                </Link>
+              )}
+              {item.url && (
+                <a href={item.url} target="_blank" rel="noreferrer">
+                  <LanguageIcon className={styles.link_btn} />
+                </a>
+              )}
             </div>
           </div>
 
