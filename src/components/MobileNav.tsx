@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import styles from "../css/Header.module.css";
 
 const Nav = () => {
   const navData = [
@@ -6,16 +7,17 @@ const Nav = () => {
     { name: "고혜민", path: "/profile" },
     { name: "포트폴리오", path: "/portfolio" },
     { name: "공부한내용", path: "/works" },
-    { name: "셀프인터뷰", path: "/works" },
   ];
   return (
-    <ul className="navs">
+    <ul className={styles.nav}>
       {navData.map((item) => (
         <NavLink
           end
           to={item.path}
           key={item.name}
-          className={({ isActive }) => (isActive ? "active " : "") + "nav_item"}
+          className={({ isActive }) =>
+            (isActive ? "active " : "") + styles.nav_item
+          }
         >
           <p className="">{item.name}</p>
         </NavLink>

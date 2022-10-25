@@ -1,19 +1,17 @@
-import classNames from "classnames";
+import { useSelector } from "react-redux";
 
-import { data } from "../data";
 import WorkItem from "../components/WorkItem";
 
-import styles from "../css/WorkList.module.css";
+import { RootState } from "../module/";
+import { WorkProps } from "../module/projects";
 
 function WorkList() {
-  const state = data.works;
+  const state: WorkProps[] = useSelector((state: RootState) => state.projects);
   return (
-    <div className={classNames(styles.list_wrapper, "w1200")}>
-      <div className={styles.title_wrapper}>
-        <h2 className={styles.title}>포트폴리오</h2>
-      </div>
+    <div className="inner work-wrapper">
+      <h1 className="section-title">포트폴리오</h1>
 
-      <ul className={styles.works}>
+      <ul className="works">
         {state &&
           state.map((work) => {
             return <WorkItem {...work} key={work.id} />;

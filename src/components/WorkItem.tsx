@@ -1,33 +1,29 @@
 import { Link } from "react-router-dom";
 
-import { WorkProps } from "../type";
-import styles from "../css/WorkItem.module.css";
+import { WorkProps } from "../module/projects";
 
 const WorkItem = (work: WorkProps) => {
+  const { id, title, bgColor, filter, url } = work;
   return (
     <>
       <li
-        key={work.id}
-        className={styles.item}
-        style={{ backgroundColor: `${work.bgColor}` }}
+        key={id}
+        className="work-item"
+        style={{ backgroundColor: `${bgColor}` }}
       >
-        <div className={styles.img_wrapper}>
-          <img
-            src={`/assets/${work.id}.png`}
-            alt={work.title}
-            className={styles.img}
-          />
+        <div className="img-wrapper">
+          <img src={`/assets/${id}.png`} alt={title} />
         </div>
-        <div className={styles.row}>
-          <h2 className={styles.title}>{work.title}</h2>
-          <p className={styles.filter}>{work.filter}</p>
+        <div className="item-text-wrapper">
+          <h2 className="work-title">{title}</h2>
+          <p className="work-filter">{filter}</p>
         </div>
-        <div className={styles.btn_group}>
-          <Link to={`/portfolio/${work.id}`}>
-            <p className={styles.link_btn}>상세보기</p>
+        <div className="btn-wrapper">
+          <Link to={`/portfolio/${id}`}>
+            <p className="btn_link">상세보기</p>
           </Link>
-          <a href={work.url} target="_blank" rel="noreferrer">
-            <p className={styles.link_btn}>사이트로 이동</p>
+          <a href={url} target="_blank" rel="noreferrer">
+            <p className="btn_link">사이트로 이동</p>
           </a>
         </div>
       </li>

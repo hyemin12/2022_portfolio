@@ -1,9 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Home from "./pages/Home";
-import WorkPage from "./pages/WorkPage";
-import ProfilePage from "./pages/ProfilePage";
-import ProjectPage from "./pages/ProjectPage";
-import Error from "./pages/Error";
+import StudiesPage from "./pages/StudiesPage";
+import NotFound from "./pages/NotFound";
 import WorkDetail2 from "./components/WorkDetail";
 
 function App() {
@@ -11,13 +10,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/works/:id" element={<WorkDetail2 />}></Route>
-          <Route path="/works/*" element={<ProjectPage />}></Route>
+          <Route path="/studies" element={<StudiesPage />}></Route>
           <Route path="/portfolio/:id" element={<WorkDetail2 />}></Route>
-          <Route path="/portfolio/*" element={<WorkPage />}></Route>
-          <Route path="/profile" element={<ProfilePage />}></Route>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/*" element={<Error />}></Route>
+          <Route path="/*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

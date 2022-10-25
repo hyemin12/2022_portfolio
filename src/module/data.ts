@@ -1,63 +1,16 @@
 export const data = {
-  projects: [
+  studies: [
     {
-      filter: "react",
+      filter: "Nodejs",
       id: "nodejs-mongodb",
-      title: "nodeJS + mongoDB +react",
-      describtion: [
-        "타입스크립트를 공부하고 처음으로 진행한 프로젝트입니다.",
-        "액션 생성 함수를 작성하는 방법, 액션 객체의 타입을 지정하는 방법 등 타입스크립트 리덕스에 대하여 공부하였습니다. 또한 store 형성할 때 createStore() 가 오류가 생겨, 새롭게 변경된 configureStore() 훅에 대해 공부하였습니다.",
-        "혼자서 타입스크립트 프로젝트를 제작해서 많이 어려웠지만 문제를 해결하는 방법, 타입스크립트 기초에 대해 공부할 수 있어서 좋았습니다.",
-      ],
-      date: "2022-10-13",
-      tool: [
-        "nodejs",
-        "mongodb",
-        "concurrently",
-        "react",
-        "redux",
-        "redux-thunk",
-        "redux-promise",
-        "http-proxy-middleware",
-      ],
-      features: [
-        "1. nodeJS",
-        "2. 남은 할일 갯수 확인",
-        "3. 현재 날짜 확인",
-        "4. 할일 완료 여부 (체크박스)",
-      ],
-
-      url: "https://github.com/hyemin12/nodejs_mongodb",
-      // imgs: ["web-register", "web-login"],
+      title: "nodeJS + mongoDB +react - 회원가입,로그인 기능",
+      git: "https://github.com/hyemin12/nodejs_mongodb",
     },
     {
-      filter: "react",
+      filter: "Nodejs",
       id: "nodejs-mysql",
-      title: "nodeJS + mysql +react",
-      describtion: [
-        "타입스크립트를 공부하고 처음으로 진행한 프로젝트입니다.",
-        "액션 생성 함수를 작성하는 방법, 액션 객체의 타입을 지정하는 방법 등 타입스크립트 리덕스에 대하여 공부하였습니다. 또한 store 형성할 때 createStore() 가 오류가 생겨, 새롭게 변경된 configureStore() 훅에 대해 공부하였습니다.",
-        "혼자서 타입스크립트 프로젝트를 제작해서 많이 어려웠지만 문제를 해결하는 방법, 타입스크립트 기초에 대해 공부할 수 있어서 좋았습니다.",
-      ],
-      date: "2022-10-13",
-      tool: [
-        "nodejs",
-        "mysql",
-        "concurrently",
-        "react",
-        "redux toolkit",
-        "redux-thunk",
-        "redux-promise",
-        "http-proxy-middleware",
-      ],
-      features: [
-        "1. 할일 등록 및 삭제 기능",
-        "2. 남은 할일 갯수 확인",
-        "3. 현재 날짜 확인",
-        "4. 할일 완료 여부 (체크박스)",
-      ],
-
-      url: "https://github.com/hyemin12/typescript-todo-nodejs",
+      title: "nodeJS + mysql +react - 투두앱 만들기",
+      git: "https://github.com/hyemin12/typescript-todo-nodejs",
     },
     {
       filter: "ect",
@@ -69,25 +22,11 @@ export const data = {
       filter: "Typescript",
       id: "tsc-todo",
       title: "투두리스트",
-      describtion: [
-        "타입스크립트를 공부하고 처음으로 진행한 프로젝트입니다.",
-        "액션 생성 함수를 작성하는 방법, 액션 객체의 타입을 지정하는 방법 등 타입스크립트 리덕스에 대하여 공부하였습니다. 또한 store 형성할 때 createStore() 가 오류가 생겨, 새롭게 변경된 configureStore() 훅에 대해 공부하였습니다.",
-        "혼자서 타입스크립트 프로젝트를 제작해서 많이 어려웠지만 문제를 해결하는 방법, 타입스크립트 기초에 대해 공부할 수 있어서 좋았습니다.",
-      ],
-      date: "2022-03-15",
-      tool: ["React", "Typescript", "Redux", "Sass", "netlify"],
-      features: [
-        "1. 할일 등록 및 삭제 기능",
-        "2. 남은 할일 갯수 확인",
-        "3. 현재 날짜 확인",
-        "4. 할일 완료 여부 (체크박스)",
-      ],
-
       git: "https://github.com/hyemin12/typescript-todo-app",
       url: "https://hm-tsc-todo-app.netlify.app",
     },
     {
-      filter: "react",
+      filter: "React",
       id: "gomintalk",
       title: "리슨 버블 클론 코딩",
       describtion: [
@@ -257,20 +196,20 @@ export const data = {
       git: "https://github.com/hyemin12/responsive-webstie-forty/",
       url: "https://hyemin12.github.io/responsive-webstie-forty/",
     },
-    {
-      filter: "jQuery",
-      id: "markuptravel",
-      title: "여행사 마크업",
-      describtion: [
-        "하이미디어 여행사 홈페이지를 마크업한 사이트입니다. 메인페이지, 회사소개 페이지가 마크업되어져 있으며, 나머지 페이지들은 리뉴얼안내 이미지가 화면에 출력됩니다.",
-        "jQuery의 bx 슬라이드를 이용하여 공항예약, 호텔예약, 렌트카, 휴양지의 탭 메뉴를 슬라이드처럼 움직이도록 구현하였습니다.",
-        "배경의 풍선에 애니메이션 효과를 주어 보다 생동감있는 홈페이지를 구현하고자 하였습니다.",
-      ],
-      date: "2020-08-14",
-      tool: ["HTML", "CSS", "jQuery", "gh-pages", "Photoshop"],
-      git: "https://github.com/hyemin12/web-design-practice/tree/main/05travel",
-      url: "https://hyemin12.github.io/web-design-practice/05travel/",
-    },
+    // {
+    //   filter: "jQuery",
+    //   id: "markuptravel",
+    //   title: "여행사 마크업",
+    //   describtion: [
+    //     "하이미디어 여행사 홈페이지를 마크업한 사이트입니다. 메인페이지, 회사소개 페이지가 마크업되어져 있으며, 나머지 페이지들은 리뉴얼안내 이미지가 화면에 출력됩니다.",
+    //     "jQuery의 bx 슬라이드를 이용하여 공항예약, 호텔예약, 렌트카, 휴양지의 탭 메뉴를 슬라이드처럼 움직이도록 구현하였습니다.",
+    //     "배경의 풍선에 애니메이션 효과를 주어 보다 생동감있는 홈페이지를 구현하고자 하였습니다.",
+    //   ],
+    //   date: "2020-08-14",
+    //   tool: ["HTML", "CSS", "jQuery", "gh-pages", "Photoshop"],
+    //   git: "https://github.com/hyemin12/web-design-practice/tree/main/05travel",
+    //   url: "https://hyemin12.github.io/web-design-practice/05travel/",
+    // },
     {
       filter: "jQuery",
       id: "stranger",
@@ -422,80 +361,19 @@ export const data = {
       bgColor: "#f3e7e9",
     },
   ],
-  social: [
-    { id: "social_github", url: "https://github.com/hyemin12" },
-    { id: "social_blog", url: "https://hyemin-12.tistory.com/" },
+  interview: [
+    {
+      title: "언제부터 지금의 직무에 관심을 갖게 되었나요?",
+      text: "웹디자이너 · 웹퍼블리셔 과정을 수료하면서 저는 디자인 보다는 코드를 작성해서 웹을 구현하는 것에 더 큰 매력을 느꼈습니다. 다양한 기능을 구현하고 싶어 자바스크립트에 대하여 공부를 하면서 프론트엔드의 개발에 대해 알게 되었고, 하드코딩이 아닌 백엔드의 데이터로 화면을 구성하고 기능을 동작하도록 만드는 프론트엔드 개발에 관심을 가지게 되었습니다.",
+    },
+    {
+      title: "학원을 다니지 않고, 혼자서 개발 공부를 한 이유가 있나요?",
+      text: "저 역시 웹 디자인 및 웹 퍼블리셔 과정은 학원을 다니며 공부를 했습니다. 학원을 다니며, 강의를 열심히 들어도 혼자 복습하거나 꾸준히 연습하지 않으면 제 것으로 만들기 어렵다는 것을 느꼈습니다. 그래서 개발 공부할 때에는 강의를 듣고, 그 강의를 복습하는 방식으로 공부를 했습니다.",
+    },
+    {
+      title:
+        "Github commit 기록을 보면 2021년 11월부터 2022년 1월까지 commit이 안되어 있던데 무슨 일이 있었나요?",
+      text: "정보처리기능사 자격증을 취득하기 위해 공부를 했습니다. 2021년 프론트엔드 강의를 듣고 개인 프로젝트를 제작하려고 하였으나, 강사의 코드를 그대로 따라 치기식으로 공부한 결과 혼자서 코드를 작성하는데 어려움을 느꼈습니다. 따라 무작정 강의를 듣는 것이 아닌 기초부터 차근차근 공부하고자 하였습니다. 컴퓨터공학의 기초 지식을 쌓을 수 있는 정보처리 기능사를 9월부터 12월까지 공부했으며 자격증 취득하였습니다.",
+    },
   ],
-  profile: {
-    skillDevelop: [
-      "HTML5",
-      "CSS3",
-      "Javascript",
-      "React",
-      "Redux",
-      "SASS",
-      "bootstrap",
-      "jQuery",
-      "Git",
-    ],
-    skillDesign: ["nodejs", "typescript", "firebase"],
-    education: [
-      {
-        title: "한번에 끝내는 프론트엔드 개발 초격차 패키지",
-        school: "패스트캠퍼스",
-        date: "2021.04 ~ 2021.10",
-        studyContent: [
-          "Git을 활용한 버전관리",
-          "자바스크립트 함수, 데이터",
-          "HTML/CSS/SCSS, display flex를 활용한 구조 설계",
-          "Bootstrap 사용 방법, 커스터마이징 하는 법",
-          "Vue 문법",
-          "React 컴포넌트, 리액트 라우터, style components, react Hook",
-          "git을 활용한 netlify 배포",
-        ],
-      },
-      {
-        title: "스마트기기 UX/UI 웹디자인 웹퍼블리셔 과정",
-        school: "하이미디어 컴퓨터학원",
-        date: "2020.04 ~ 2020.09",
-        studyContent: [
-          "웹 사이트 디자인(포토샵), 벡터디자인(일러스트)",
-          "HTML을 이용한 웹페이지 제작",
-          "자바스크립트 기초",
-          "제이쿼리, 부트스트랩, 깃허브",
-          "워드프레스, 그누보드",
-        ],
-      },
-    ],
-    certificate: [
-      { title: "정보처리기능사", issue: "한국산업인력공단", date: "2021.12" },
-      {
-        title: "컴퓨터그래픽스기능사",
-        issue: "한국산업인력공단",
-        date: "2021.12",
-      },
-      { title: "웹디자인기능사", issue: "한국산업인력공단", date: "2020.09" },
-    ],
-    experience: [
-      {
-        title: "두에이리원",
-        date: "2019.05 ~ 2020.01",
-        contents: [
-          "공연사업팀",
-          "퇴사 사유 : 경영악화로 인한 임금체불",
-          "기타 : 업직종 전환을 위해 퇴사하였으나, 전 회사에서 같이 일하던 팀의 업무를 도와주다가 입사하게 됨",
-        ],
-      },
-      {
-        title: "스타이엔티",
-        date: "2018.05~2018.12",
-        contents: ["공연사업 및 신규사업팀", "퇴사 사유 : 업직종 전환"],
-      },
-      {
-        title: "에이엔스테이지",
-        date: "2017.06 ~ 2017.12",
-        contents: ["세트미술팀", " 업무 : 방송통신대학교 방송 세트 디자인"],
-      },
-    ],
-  },
 };

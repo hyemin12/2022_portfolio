@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import classNames from "classnames";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BookIcon from "@mui/icons-material/Book";
@@ -9,7 +8,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 import Nav from "./Nav";
-import styles from "../css/Header.module.css";
 
 const Header = () => {
   const isMobile = useMediaQuery({ maxWidth: 953 });
@@ -34,9 +32,7 @@ const Header = () => {
   ];
   return (
     <header>
-      <div className={styles.line}></div>
-
-      {isMobile ? (
+      {/* {isMobile ? (
         <div className={styles.nav_wrapper}>
           {isNav ? (
             <div>
@@ -76,28 +72,18 @@ const Header = () => {
             <h2 className="font-point">hyemin</h2>
           </div>
         </div>
-      ) : (
-        <div className={classNames(styles.nav_wrapper, "w1200")}>
-          <Nav />
-          <div className={styles.logo}>
-            <h2 className="font-point">hyemin</h2>
-          </div>
-          <ul className={styles.social}>
-            {socials.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.url}
-                  target="_blank"
-                  className={styles.social_icon}
-                  rel="noreferrer"
-                >
-                  {item.icon}
-                </a>
-              </li>
-            ))}
-          </ul>
+      ) : ( */}
+      <div className="nav-wrapper w1200">
+        <div className="logo">
+          <h2 className="font-point">hyemin</h2>
         </div>
-      )}
+        <Nav />
+
+        <span className="copyright">
+          Copyright &#169; {new Date().getFullYear()} Hyemin.
+        </span>
+      </div>
+      {/* )} */}
     </header>
   );
 };

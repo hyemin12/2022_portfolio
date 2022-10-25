@@ -18,15 +18,18 @@ const Layout = (props: { children: React.ReactNode }) => {
       {loading ? (
         <Loading />
       ) : (
-        <>
+        <div className="layout-container">
           <Header />
-          <div>{props.children}</div>
 
-          <div className="btn_top" onClick={movetoTop}>
-            <p>↑ 맨 위로 올라가기</p>
+          <div className="container">
+            <div>{props.children}</div>
+
+            <div className="btn_top" onClick={movetoTop}>
+              <p>↑ 맨 위로 올라가기</p>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </>
+        </div>
       )}
     </>
   );

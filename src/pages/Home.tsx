@@ -1,18 +1,24 @@
-import { data } from "../data";
+import { useSelector } from "react-redux";
+import { RootState } from "../module";
+import { StudyProps } from "../module/studies";
 
-import Intro from "../components/Intro";
 import Layout from "../components/Layout";
-import ProjectList from "../components/ProjectList";
+import Intro2 from "../components/Intro2";
+import About from "../components/About";
+import StudiesList from "../components/StudiesList";
 import WorkList from "../components/WorkList";
+import Interview from "../components/Interview";
 
 const Home = () => {
-  const state = data.projects;
-  const projectData = state.slice(0, 3);
+  const state: StudyProps[] = useSelector((state: RootState) => state.studies);
+  const studieState = state.slice(0, 6);
   return (
     <Layout>
-      <Intro />
+      <Intro2 />
+      <About />
       <WorkList />
-      {projectData && <ProjectList {...projectData} />}
+      <StudiesList studieState={studieState} />
+      <Interview />
     </Layout>
   );
 };
