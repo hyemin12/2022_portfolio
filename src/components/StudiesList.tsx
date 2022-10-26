@@ -12,7 +12,6 @@ const StudiesList = ({ studieState }: { studieState: StudyProps[] }) => {
   const initState: StudyProps[] = useSelector(
     (state: RootState) => state.studies
   );
-  console.log(studieState);
 
   const [isActive, setIsActive] = useState(0);
 
@@ -29,15 +28,16 @@ const StudiesList = ({ studieState }: { studieState: StudyProps[] }) => {
   const [state, setState] = useState(studieState);
 
   function handleFilter(event: any) {
-    console.log(event);
     const a = event.target.outerText;
 
     const init = initState;
     if (a === "All") {
       setState(studieState);
+      setIsActive(0);
     } else if (a) {
       const newArr = init.filter((item) => item.filter === a);
       setState(newArr);
+      setIsActive(event.target.value);
     }
   }
 
@@ -48,8 +48,13 @@ const StudiesList = ({ studieState }: { studieState: StudyProps[] }) => {
       </h1>
 
       <ul className="filter-wrapper">
-        {filters.map((a, i) => (
-          <li className="filter-item" key={i} onClick={handleFilter}>
+        {filters.map((a, idx) => (
+          <li
+            className={"filter-item" + (idx === isActive ? " active" : "")}
+            key={idx}
+            value={idx}
+            onClick={handleFilter}
+          >
             {a}
           </li>
         ))}
