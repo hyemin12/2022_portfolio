@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BookIcon from "@mui/icons-material/Book";
 import FeedIcon from "@mui/icons-material/Feed";
@@ -7,7 +8,6 @@ import TypeIt from "typeit-react";
 
 function Intro2() {
   const location = useLocation();
-  const pathname = location.pathname;
 
   const socials = [
     {
@@ -33,11 +33,10 @@ function Intro2() {
       style={{ backgroundImage: `url(${"./assets/hyemin.jpg"})` }}
     >
       <div className="intro-contents">
+        <h1 className="intro-title">고혜민</h1>
         <div>
-          <img src="" alt="혜민" />
-          <h1>고혜민</h1>
+          <TypeIt>성실함을 바탕으로 성장하는 개발자 고혜민입니다.</TypeIt>
         </div>
-        <TypeIt />
         <ul className="socail-wrapper">
           {socials.map((item) => (
             <li key={item.name}>
@@ -52,9 +51,11 @@ function Intro2() {
             </li>
           ))}
         </ul>
-        <button className="btn-link">
-          <a href="">이력서보기</a>
-        </button>
+
+        <Link to="aboutRef" smooth={true} className="btn_route">
+          보러가기
+        </Link>
+
         <div className="btn-scroll">
           <span>Scroll Down</span>
           <div className="mouse">

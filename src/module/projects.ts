@@ -7,9 +7,11 @@ export interface WorkProps {
   title: string;
   describtion: string[];
   date: string;
-  tool: string[];
-  git: string | undefined;
+  tools: string[];
+  features: string[];
+  git: string;
   url: string;
+  imgs: string[];
   bgColor: string;
 }
 

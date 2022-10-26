@@ -1,7 +1,4 @@
-import Slider from "react-slick";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Slider from "./Slide";
 
 import { data } from "../module/data";
 
@@ -13,21 +10,13 @@ interface InterviewProps {
 function Interview() {
   const interviews: InterviewProps[] = data.interview;
 
-  const settings = {
-    dots: true,
-    speed: 1000,
-    infinite: true,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <div className="inner interview-wrapper">
-      <h1 className="section-title">셀프 인터뷰</h1>
+      <h1 className="section-title" id="selfRef">
+        셀프 인터뷰
+      </h1>
       <div className="slick-slider">
-        <Slider {...settings}>
+        <Slider>
           {interviews.map((item, idx) => {
             const { title, text } = item;
             return (

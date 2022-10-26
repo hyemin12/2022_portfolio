@@ -9,7 +9,9 @@ function WorkList() {
   const state: WorkProps[] = useSelector((state: RootState) => state.projects);
   return (
     <div className="inner work-wrapper">
-      <h1 className="section-title">포트폴리오</h1>
+      <h1 className="section-title" id="projectRef">
+        포트폴리오
+      </h1>
 
       <ul className="works">
         {state &&

@@ -1,16 +1,20 @@
-import classNames from "classnames";
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import classNames from "classnames";
 import { useSelector } from "react-redux";
+
+import StudiesItem from "./StudiesItem";
 import { RootState } from "../module";
 import { StudyProps } from "../module/studies";
 
-import StudiesItem from "./StudiesItem";
-
-import styles from "../css/ProjectList.module.css";
-import { Link, useLocation } from "react-router-dom";
-
 const StudiesList = ({ studieState }: { studieState: StudyProps[] }) => {
   const location = useLocation();
+  const initState: StudyProps[] = useSelector(
+    (state: RootState) => state.studies
+  );
+  console.log(studieState);
+
+  const [isActive, setIsActive] = useState(0);
 
   const filters = [
     "All",
@@ -25,21 +29,23 @@ const StudiesList = ({ studieState }: { studieState: StudyProps[] }) => {
   const [state, setState] = useState(studieState);
 
   function handleFilter(event: any) {
+    console.log(event);
     const a = event.target.outerText;
 
-    const init = studieState;
+    const init = initState;
     if (a === "All") {
-      setState(init);
+      setState(studieState);
     } else if (a) {
       const newArr = init.filter((item) => item.filter === a);
       setState(newArr);
     }
   }
-  console.log(location.pathname);
 
   return (
     <div className="inner studies-wrapper">
-      <h1 className="section-title">공부한 내용</h1>
+      <h1 className="section-title" id="studyRef">
+        공부한 내용
+      </h1>
 
       <ul className="filter-wrapper">
         {filters.map((a, i) => (
@@ -51,8 +57,8 @@ const StudiesList = ({ studieState }: { studieState: StudyProps[] }) => {
 
       <ul
         className={classNames(
-          styles.project_wrapper,
-          state.length < 3 && styles.start
+          "project-wrapper",
+          state.length < 3 && "flex-start"
         )}
       >
         {state &&

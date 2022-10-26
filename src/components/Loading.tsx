@@ -1,9 +1,9 @@
-import styles from "../css/Loading.module.css";
+import "../loading.css";
 
 function Loading() {
   return (
-    <div className={styles.loading}>
-      <div className={styles.loading_animation}></div>
+    <div className="loading">
+      <div className="loading_animation"></div>
     </div>
   );
 }

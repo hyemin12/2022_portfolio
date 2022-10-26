@@ -1,19 +1,20 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { data } from "../data";
+import { useSelector } from "react-redux";
+import { RootState } from "../module/";
+import { WorkProps } from "../module/projects";
 
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
-import styles from "../css/WorkDetail.module.css";
+import Slide from "./Slide";
 
 function WorkDetail() {
-  const { id } = useParams();
-  /*item data (project에 없으면, works에서 가져오기) */
-  let item;
-  item = data.projects.filter((a) => a.id === id)[0];
-  if (item === undefined) {
-    item = data.works.filter((a) => a.id === id)[0];
-  }
+  const state: WorkProps[] = useSelector((state: RootState) => state.projects);
+  const { itemId } = useParams();
+
+  const item: WorkProps = state.filter((a) => a.id === itemId)[0];
+
+  const { id, filter, title, imgs, describtion, git, url, tools, features } =
+    item;
   /* 뒤로가기 */
   const navigate = useNavigate();
   function goBack() {
@@ -21,75 +22,71 @@ function WorkDetail() {
   }
   return (
     <>
-      {item && (
-        <div className={styles.detail_wrapper}>
-          <div className={styles.btn_back} onClick={goBack}>
-            <ArrowBackIosIcon />
-            뒤로가기
+      <div className="inner work-detail-wrapper">
+        <div className="btn_back" onClick={goBack}>
+          <ArrowBackIosIcon />
+          뒤로가기
+        </div>
+        <div className="detail-wrapper">
+          <div className="detail-slide">
+            <Slide>
+              {imgs.map((img) => (
+                <div className="detail-img" key={img}>
+                  <img src={`../assets/${img}`} alt={title} />
+                </div>
+              ))}
+            </Slide>
           </div>
-          <div
-            className={styles.title_wrapper}
-            style={{ backgroundImage: `url('../assets/${item.id}.png')` }}
-          >
-            <div className={styles.bg_opacity}></div>
-            <div style={{ zIndex: 2 }}>
-              <span className={styles.filter}>{item.filter}</span>
-              <h4 className={styles.title}>{item.title}</h4>
-              <div className={styles.btn_group}>
-                {item.url && (
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={styles.btn_url}
-                  >
-                    사이트로 이동
-                    <OpenInNewIcon className="btn_icon" />
-                  </a>
-                )}
-                {item.git && (
-                  <a
-                    href={item.git}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={styles.btn_git}
-                  >
-                    코드 보러가기
-                    <OpenInNewIcon className="btn_icon" />
-                  </a>
-                )}
+          <div>
+            <div className="detail-header">
+              <span className="detail-filter">{filter}</span>
+              <h2 className="detail-title">{title}</h2>
+              <div className="btn-group">
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-link-url"
+                >
+                  사이트로 이동
+                </a>
+                <a
+                  href={git}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-link-git"
+                >
+                  코드 보러가기
+                </a>
               </div>
             </div>
-          </div>
-          <div className={styles.container}>
-            <div>
-              <div className={styles.section}>
-                {item.describtion &&
-                  item.describtion.map((a) => <p key={a}>{a}</p>)}
-              </div>
-              {item.features && (
-                <div className={styles.section}>
-                  <h4 className={styles.h4_title}>주요 업무</h4>
-                  {item.features.map((a, i) => (
-                    <p key={i}>{a}</p>
+            <div className="detail-content-wrapper">
+              <article>
+                {describtion.map((a) => (
+                  <p key={a}>{a}</p>
+                ))}
+              </article>
+              <article>
+                <h3>맡은 업무</h3>
+                {features.map((feature) => (
+                  <p key={feature}>{feature}</p>
+                ))}
+              </article>
+
+              <article>
+                <h3>package</h3>
+                <div className="tools">
+                  {tools.map((tool) => (
+                    <p className="tool" key={tool}>
+                      {tool}
+                    </p>
                   ))}
                 </div>
-              )}
-              <div className={styles.section}>
-                <h4 className={styles.h4_title}>사용툴</h4>
-                <div className={styles.tools}>
-                  {item.tool &&
-                    item.tool.map((a) => (
-                      <span className={styles.tool} key={a}>
-                        {a}
-                      </span>
-                    ))}
-                </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }
