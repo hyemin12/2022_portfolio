@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
   const location = useLocation();
   const navData = [
     { name: "홈", ref: "homeRef" },
@@ -17,15 +18,42 @@ const Nav = () => {
     window.scrollTo({ top: location, behavior: "smooth" });
     setIsActive(idx);
   };
+
+  /** 데이터 ref의 윈도우 높이값 배열 */
+  var areaArr: any = [...navData].map(
+    (data) => document.getElementById(data.ref).offsetTop
+  );
+
+  /** scroll 하면 isActive 바꾸는 함수 */
   const handleActive = () => {
-    const scrollLocation = window.pageYOffset;
+    setScrollY(window.pageYOffset);
+    if (scrollY < areaArr[0]) {
+      setIsActive(0);
+    } else if (areaArr[0] < scrollY && scrollY < areaArr[1]) {
+      setIsActive(1);
+    } else if (areaArr[1] < scrollY && scrollY < areaArr[2]) {
+      setIsActive(2);
+    } else if (areaArr[2] < scrollY && scrollY < areaArr[3]) {
+      setIsActive(3);
+    } else if (areaArr[3] < scrollY && scrollY < areaArr[4]) {
+      setIsActive(4);
+    } else if (areaArr[4] < scrollY && scrollY < areaArr[5]) {
+      setIsActive(5);
+    } else if (areaArr[5] < scrollY && scrollY < areaArr[6]) {
+      setIsActive(6);
+    }
   };
+
   useEffect(() => {
-    window.addEventListener("scroll", handleActive);
-    handleActive();
-    return window.removeEventListener("scroll", handleActive);
-  }, []);
-  //
+    function scrollListener() {
+      window.addEventListener("scroll", handleActive);
+    }
+    scrollListener();
+    return () => {
+      window.removeEventListener("scroll", handleActive);
+    };
+  });
+
   return (
     <ul className="navs">
       {navData.map((item, idx) =>
