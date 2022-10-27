@@ -1,12 +1,15 @@
 import TypeIt from "typeit-react";
 
-import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import EmailIcon from "@mui/icons-material/Email";
 import EventIcon from "@mui/icons-material/Event";
 import NearMeIcon from "@mui/icons-material/NearMe";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
+import { useEffect } from "react";
 
 function About() {
+  const onScrollFadeIn = useScrollFadeIn();
+
   const info = [
     {
       icon: <EventIcon />,
@@ -28,7 +31,7 @@ function About() {
 
   return (
     <div className="inner">
-      <h1 className="section-title" id="aboutRef">
+      <h1 className="section-title" id="aboutRef" {...onScrollFadeIn}>
         About Me
       </h1>
       <div className="about-info-wrapper">
@@ -52,6 +55,7 @@ function About() {
           </div>
         </div>
       </div>
+
       <div className="about-content">
         <ul className="tiles">
           {info.map((item) => (

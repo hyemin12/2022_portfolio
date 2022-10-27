@@ -1,6 +1,6 @@
-import Slider from "./Slide";
-
 import { data } from "../module/data";
+import Slider from "./Slide";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 interface InterviewProps {
   title: string;
@@ -10,9 +10,11 @@ interface InterviewProps {
 function Interview() {
   const interviews: InterviewProps[] = data.interview;
 
+  const onScrollFadeIn = useScrollFadeIn();
+
   return (
     <div className="inner interview-wrapper">
-      <h1 className="section-title" id="selfRef">
+      <h1 className="section-title" id="selfRef" {...onScrollFadeIn}>
         셀프 인터뷰
       </h1>
       <div className="slick-slider">

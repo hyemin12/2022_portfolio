@@ -1,13 +1,18 @@
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
+
 function Experience() {
+  const onScrollFadeIn = useScrollFadeIn();
+  const onScrollFadeIn1 = useScrollFadeIn("up", 1, 0.01);
+  const onScrollFadeIn2 = useScrollFadeIn("up", 1, 0.01);
   return (
     <div className="inner">
-      <h1 className="section-title" id="expRef">
+      <h1 className="section-title" id="expRef" {...onScrollFadeIn}>
         교육 및 기타이력
       </h1>
       <div className="experience-wrapper">
         <div className="item education">
           <div className="line"></div>
-          <ul>
+          <ul {...onScrollFadeIn1}>
             <li>
               <p className="date">2021.04 ~ 2021.10</p>
               <h4>패스트 캠퍼스</h4>
@@ -27,7 +32,7 @@ function Experience() {
         </div>
         <div className="item experience">
           <div className="line"></div>
-          <ul>
+          <ul {...onScrollFadeIn2}>
             <li>
               <p className="date">2019.05 ~ 2020.01</p>
               <h4>두에이리원</h4>
