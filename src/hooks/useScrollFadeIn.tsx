@@ -3,7 +3,7 @@ import { useRef, useEffect, useCallback } from "react";
 const useScrollFadeIn = (direction = "up", duration = 1, delay = 0) => {
   const element = useRef<any>();
 
-  // direction 선택
+  // 애니메이션 방향
   const handleDirection = (name: string) => {
     switch (name) {
       case "up":

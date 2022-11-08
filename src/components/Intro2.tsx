@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
-import { Link } from "react-scroll";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BookIcon from "@mui/icons-material/Book";
 import FeedIcon from "@mui/icons-material/Feed";
+import { Link } from "react-router-dom";
 
 import TypeIt from "typeit-react";
 
@@ -52,7 +52,7 @@ function Intro2() {
           ))}
         </ul>
 
-        <Link to="aboutRef" smooth={true} className="btn_route">
+        <Link to="aboutRef" className="btn_route">
           보러가기
         </Link>
 
