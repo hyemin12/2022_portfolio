@@ -1,17 +1,17 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { RootState } from "../module/";
-import { WorkProps } from "../module/projects";
+
+import { ProjectProps } from "../type";
 
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 import Slide from "./Slide";
+import { data } from "../data";
 
-function WorkDetail() {
-  const state: WorkProps[] = useSelector((state: RootState) => state.projects);
+function ProjectDetail() {
+  const state: ProjectProps[] = data.projects;
   const { itemId } = useParams();
 
-  const item: WorkProps = state.filter((a) => a.id === itemId)[0];
+  const item: ProjectProps = state.filter((a) => a.id === itemId)[0];
 
   const { id, filter, title, imgs, describtion, git, url, tools, features } =
     item;
@@ -91,4 +91,4 @@ function WorkDetail() {
   );
 }
 
-export default WorkDetail;
+export default ProjectDetail;

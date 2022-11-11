@@ -1,5 +1,24 @@
+import SchoolIcon from "@mui/icons-material/School";
+import EmailIcon from "@mui/icons-material/Email";
+import EventIcon from "@mui/icons-material/Event";
+import NearMeIcon from "@mui/icons-material/NearMe";
+
 export const data = {
   studies: [
+    {
+      filter: "Typescript",
+      id: "portfolio",
+      title: "2022 포트폴리오",
+      git: "https://github.com/hyemin12/2022_portfolio",
+      url: "https://h-m-portfolio.netlify.app/",
+    },
+    {
+      filter: "React",
+      id: "gomintalk",
+      title: "리슨 버블 클론 코딩",
+      git: "https://github.com/hyemin12/gomin-talk-app",
+      url: "https://wizardly-hermann-7fecb3.netlify.app/",
+    },
     {
       filter: "Nodejs",
       id: "nodejs-mongodb",
@@ -25,13 +44,7 @@ export const data = {
       git: "https://github.com/hyemin12/typescript-todo-app",
       url: "https://hm-tsc-todo-app.netlify.app",
     },
-    {
-      filter: "React",
-      id: "gomintalk",
-      title: "리슨 버블 클론 코딩",
-      git: "https://github.com/hyemin12/gomin-talk-app",
-      url: "https://wizardly-hermann-7fecb3.netlify.app/",
-    },
+
     {
       filter: "Vanilla JS",
       id: "moment",
@@ -82,7 +95,7 @@ export const data = {
       detailImg: ["wordle1", "wordle2"],
     },
     {
-      filter: "Vanilla JS",
+      filter: "markup",
       id: "responsive1",
       img: "responsive1-1",
       title: "반응형 사이트 - readOnly",
@@ -90,7 +103,7 @@ export const data = {
       url: "https://hyemin12.github.io/responsive-webstie-readOnly/",
     },
     {
-      filter: "Vanilla JS",
+      filter: "markup",
       id: "responsive2",
       img: "responsive2-1",
       title: "반응형 사이트 - massively",
@@ -99,7 +112,7 @@ export const data = {
       url: "https://hyemin12.github.io/responsive-webstie-massively/",
     },
     {
-      filter: "Vanilla JS",
+      filter: "markup",
       id: "responsive3",
       img: "responsive3-1",
       title: "반응형 사이트 - funny Flakes",
@@ -108,7 +121,7 @@ export const data = {
       url: "https://hyemin12.github.io/responsive-webstie-funnyFlakes/",
     },
     {
-      filter: "Vanilla JS",
+      filter: "markup",
       id: "responsive4",
       img: "responsive4-1",
       title: "반응형 사이트 - forty",
@@ -117,9 +130,9 @@ export const data = {
       url: "https://hyemin12.github.io/responsive-webstie-forty/",
     },
     {
-      filter: "jQuery",
+      filter: "ect",
       id: "stranger",
-      title: "비밀의 숲2 프로모션",
+      title: "jQuery 비밀의 숲2 프로모션",
       git: "https://github.com/hyemin12/web-design-portfolio/01Stranger2/",
       url: "https://hyemin12.github.io/web-design-portfolio/01Stranger2/",
     },
@@ -136,7 +149,7 @@ export const data = {
       url: "https://github.com/hyemin12/react-dashboard-app2/blob/master/public/img/portfolio/travel2.jpg?raw=true",
     },
   ],
-  works: [
+  projects: [
     {
       filter: "React",
       id: "movie",
@@ -259,5 +272,91 @@ export const data = {
         "Github commit 기록을 보면 2021년 11월부터 2022년 1월까지 commit이 안되어 있던데 무슨 일이 있었나요?",
       text: "정보처리기능사 자격증을 취득하기 위해 공부를 했습니다. 2021년 프론트엔드 강의를 듣고 개인 프로젝트를 제작하려고 하였으나, 강사의 코드를 그대로 따라 치기식으로 공부한 결과 혼자서 코드를 작성하는데 어려움을 느꼈습니다. 따라 무작정 강의를 듣는 것이 아닌 기초부터 차근차근 공부하고자 하였습니다. 컴퓨터공학의 기초 지식을 쌓을 수 있는 정보처리 기능사를 9월부터 12월까지 공부했으며 자격증 취득하였습니다.",
     },
+  ],
+  skills: [
+    {
+      src: "https://img.shields.io/badge/Html5-orange?style=flat-square&logo=html5&logoColor=white",
+      name: "html5",
+    },
+    {
+      src: "https://img.shields.io/badge/CSS3-blue?style=flat-square&logo=css3&logoColor=white",
+      name: "css3",
+    },
+    {
+      src: "https://img.shields.io/badge/Javascript-FFCA28?style:flat-square&logo=javascript&logoColor=white",
+      name: "javascript",
+    },
+    {
+      src: "https://img.shields.io/badge/React-61dafb?style=flat-square&logo=React&logoColor=white",
+      name: "react",
+    },
+    {
+      src: "https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white",
+      name: "redux",
+    },
+    {
+      src: "https://img.shields.io/badge/Git-181717?style=flat-square&logo=Git&logoColor=white",
+      name: "Git",
+    },
+    {
+      src: "https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white",
+      name: "Sass",
+    },
+    {
+      src: "https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=Bootstrap&logoColor=white",
+      name: "Bootstrap",
+    },
+  ],
+  studiedSkills: [
+    {
+      src: "https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white",
+      name: "typescript",
+    },
+    {
+      src: "https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white",
+      name: "Node",
+    },
+    {
+      src: "https://img.shields.io/badge/MongoDB-47A248e?style=flat-square&logo=MongoDB&logoColor=white",
+      name: "MongoDB",
+    },
+    {
+      src: "https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white",
+      name: "Firebase",
+    },
+  ],
+  educations: [
+    {
+      date: "2021.04 ~ 2021.10",
+      title: "패스트 캠퍼스",
+      subtitle: "한번에 끝내는 프론트엔드 개발 초격차 패키지 수료",
+    },
+    {
+      date: "2020.04 ~ 2020.09",
+      title: "하이미디어 컴퓨터학원",
+      subtitle: "스마트기기 UI/UX 웹디자인 & 웹 퍼블리셔 과정 수료",
+    },
+    {
+      date: "2013.03 ~ 2017.05",
+      title: "인천 가톨릭대학교",
+      subtitle: "환경디자인학과 학사 (4년제)",
+    },
+  ],
+  experience: [
+    {
+      date: "2019.05 ~ 2020.01",
+      title: "두에이리원",
+      subtitle: "공연사업팀, 퇴사 사유 : 경영악화로 인한 임금체불",
+    },
+    {
+      date: "2018.05 ~ 2018.12",
+      title: "스타이엔티",
+      subtitle: "공연사업 및 신규사업팀, 퇴사 사유 : 업직종 전환",
+    },
+  ],
+  certificates: [
+    { date: "2021.12", text: "정보처리기능사" },
+    { date: "2021.12", text: "컴퓨터그래픽스기능사" },
+    { date: "2020.09", text: "웹디자인기능사" },
   ],
 };

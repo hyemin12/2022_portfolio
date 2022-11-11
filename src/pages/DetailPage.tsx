@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
-import WorkDetail from "../components/WorkDetail";
+import ProjectDetail from "../components/ProjectDetail";
 
 function DetailPage() {
   return (
     <div>
       <Layout>
-        <WorkDetail />
+        <ProjectDetail />
       </Layout>
     </div>
   );

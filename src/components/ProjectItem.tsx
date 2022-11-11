@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
-import { WorkProps } from "../module/projects";
+import { ProjectProps } from "../type";
 
-const WorkItem = (work: WorkProps) => {
+const ProjectItem = (work: ProjectProps) => {
   const { id, title, bgColor, filter, url } = work;
+
   return (
     <>
       <li
@@ -31,4 +32,4 @@ const WorkItem = (work: WorkProps) => {
   );
 };
 
-export default WorkItem;
+export default ProjectItem;

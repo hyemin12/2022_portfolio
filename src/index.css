@@ -561,6 +561,7 @@ img {
 .experience-wrapper {
   display: flex;
   gap: 30px;
+  width: 100%;
 }
 .experience-wrapper .item {
   display: flex;

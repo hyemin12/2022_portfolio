@@ -8,7 +8,7 @@ const Nav = () => {
   const navData = [
     { name: "홈", ref: "homeRef" },
     { name: "고혜민", ref: "aboutRef" },
-    { name: "포트폴리오", ref: "projectRef" },
+    { name: "개인 포트폴리오", ref: "projectRef" },
     { name: "공부한내용", ref: "studyRef" },
     { name: "교육 및 기타이력", ref: "expRef" },
     { name: "셀프인터뷰", ref: "selfRef" },

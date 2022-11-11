@@ -1,16 +1,13 @@
-import { useSelector } from "react-redux";
-import { RootState } from "../module";
-import { StudyProps } from "../module/studies";
+import { StudyProps } from "../type";
 import Layout from "../components/Layout";
-import StudiesList from "../components/StudiesList";
+import StudiesList from "../components/Studies";
+import { data } from "../data";
 
 function StudiesPage() {
-  const studieState: StudyProps[] = useSelector(
-    (state: RootState) => state.studies
-  );
+  const studieState: StudyProps[] = data.studies;
   return (
     <Layout>
-      <StudiesList studieState={studieState} />
+      <StudiesList studiesState={studieState} />
     </Layout>
   );
 }

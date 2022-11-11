@@ -1,7 +1,7 @@
 import LanguageIcon from "@mui/icons-material/Language";
 import CodeIcon from "@mui/icons-material/Code";
 
-import { StudyProps } from "../module/studies";
+import { StudyProps } from "../type";
 
 const StudiesItem = (item: StudyProps) => {
   const { id, img, filter, title, url, git } = item;
