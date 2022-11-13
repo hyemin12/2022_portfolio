@@ -14,7 +14,7 @@ const StudiesItem = (item: StudyProps) => {
             alt={title}
           />
         </div>
-        <div>
+        <div className="item-wrapper">
           <div className="item-text-wrapper">
             <p className="item-filter">{filter}</p>
             <div className="row">
