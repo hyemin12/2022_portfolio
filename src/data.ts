@@ -1,8 +1,3 @@
-import SchoolIcon from "@mui/icons-material/School";
-import EmailIcon from "@mui/icons-material/Email";
-import EventIcon from "@mui/icons-material/Event";
-import NearMeIcon from "@mui/icons-material/NearMe";
-
 export const data = {
   studies: [
     {
@@ -130,6 +125,14 @@ export const data = {
       url: "https://hyemin12.github.io/responsive-webstie-forty/",
     },
     {
+      filter: "markup",
+      id: "responsive5",
+      title: "반응형 사이트 - phantom",
+      ect: "https://html5up.net/phantom",
+      git: "https://github.com/hyemin12/responsive-webstie-phantom",
+      url: "https://hyemin12.github.io/responsive-webstie-phantom/",
+    },
+    {
       filter: "ect",
       id: "stranger",
       title: "jQuery 비밀의 숲2 프로모션",
@@ -172,30 +175,7 @@ export const data = {
       url: "https://react-movie-app-1f5ff8.netlify.app/",
       bgColor: "#e9edec",
     },
-    {
-      filter: "Typescript",
-      id: "mytravel",
-      title: "여행일정앱",
-      describtion: [
-        "타입스크립트와 firebase로 작성된 포트폴리오 프로젝트입니다. ",
-      ],
 
-      date: "2022-08-08",
-      tools: ["react", "Typescript", "firebase", "kakao-maps-api", "gh-pages"],
-      features: [
-        "1. Firebase의 auth를 활용한 회원가입, 로그인, 로그아웃 기능 구현",
-        "- 이메일과 비밀번호를 이용해서 회원가입을 할 수 있고, google을 이용해서도 회원가입이 가능",
-        "2. Firebase의 database를 활용한 데이터 관리 (상세일정 추가, 수정, 삭제 기능)",
-        "3. DB에서 가져온 데이터를 filter해서 날짜 별 여행 일정을 확인할 수 있음",
-        "4. 카카오 맵 api를 활용한 지도 구현",
-        "- marker를 통한 동선 및 장소 확인",
-        "- react 환경 변수를 활용하여 카카오맵 API KEY 숨기기",
-      ],
-      imgs: ["planBusan.png", "PlanHome.png", "planRegister.png"],
-      git: "https://github.com/hyemin12/typescript-hyemin-app",
-      url: "https://hyemin12.github.io/typescript-hyemin-app",
-      bgColor: "#eae2cf",
-    },
     {
       filter: "Typescript",
       id: "tsc-shop",

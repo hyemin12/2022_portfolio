@@ -27,10 +27,16 @@ function Intro2() {
     },
   ];
 
+  const moveBottom = (e: any) => {
+    e.preventDefault();
+    document.getElementById("aboutRef").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
-      className="intro-wrapper"
+      className="intro-wrapper sectionRef"
       style={{ backgroundImage: `url(${"./assets/hyemin.jpg"})` }}
+      id="homeRef"
     >
       <div className="intro-contents">
         <h1 className="intro-title">고혜민</h1>
@@ -52,9 +58,15 @@ function Intro2() {
           ))}
         </ul>
 
-        <Link to="aboutRef" className="btn_route">
+        <a
+          href="#/"
+          className="btn_route"
+          onClick={(e) => {
+            moveBottom(e);
+          }}
+        >
           보러가기
-        </Link>
+        </a>
 
         <div className="btn-scroll">
           <span>Scroll Down</span>

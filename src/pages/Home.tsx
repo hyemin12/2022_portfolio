@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+
+import Loading from "../components/Loading";
 import Layout from "../components/Layout";
 import Intro from "../components/Intro";
 import About from "../components/About";
@@ -9,22 +12,35 @@ import Experience from "../components/Experience";
 import { data } from "../data";
 
 const Home = () => {
+  const [loading, setLoading] = useState<boolean>(true);
   const state = data.studies.slice(0, 6);
+
+  useEffect(() => {
+    const handleDelay = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(handleDelay);
+  }, []);
+
   return (
-    <div id="homeRef">
-      <Layout>
-        <Intro />
+    <div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <Layout>
+          <Intro />
 
-        <About />
+          <About />
 
-        <Project />
+          <Project />
 
-        <Studies studiesState={state} />
+          <Studies studiesState={state} />
 
-        <Experience />
+          <Experience />
 
-        <Interview />
-      </Layout>
+          <Interview />
+        </Layout>
+      )}
     </div>
   );
 };

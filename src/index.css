@@ -610,6 +610,7 @@ img {
 .certificate ul {
   display: flex;
   gap: 30px;
+  margin-bottom: 40px;
 }
 .certificate li {
   display: flex;
@@ -643,17 +644,18 @@ img {
 }
 .interview-wrapper .interview-content {
   display: block !important;
-  width: 720px !important;
+  width: 780px !important;
   margin: 0 auto;
 }
 .interview-ques {
   width: 600px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+  font-size: 1.2em;
   text-align: center;
 }
 .interview-answer {
-  padding: 20px 30px;
+  padding: 30px 40px;
   background-color: #fff;
   border-radius: 20px;
   line-height: 1.6;
@@ -665,11 +667,11 @@ img {
   content: "";
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 20px solid #fff;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 50px solid #fff;
   position: absolute;
-  top: -12px;
+  top: -27px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -680,6 +682,34 @@ img {
 
 .slick-dots li button:hover + button::before {
   color: #ff4c60 !important;
+}
+/* Loading.tsx */
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #fccb00;
+  border-top-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  animation: loading 1s infinite;
+  /* name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Notfound.tsx */

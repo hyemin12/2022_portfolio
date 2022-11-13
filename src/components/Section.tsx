@@ -10,8 +10,8 @@ interface sectionProps {
 function Section({ children, title, idProp }: sectionProps) {
   const onScrollFadeIn = useScrollFadeIn();
   return (
-    <section className="inner">
-      <div id={`${idProp}Ref`}>
+    <section className="inner ">
+      <div className="sectionRef" id={`${idProp}Ref`}>
         <h1 className="section-title" {...onScrollFadeIn}>
           {title}
         </h1>

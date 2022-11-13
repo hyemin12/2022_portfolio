@@ -2,7 +2,7 @@ import Loading from "./Loading";
 import Header from "./Header";
 import { useEffect, useState } from "react";
 
-const Layout = (props: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   const [scrollY, setScrollY] = useState<number>(0);
   const [hidden, setHidden] = useState<boolean>(true);
 
@@ -32,7 +32,7 @@ const Layout = (props: { children: React.ReactNode }) => {
       <Header />
 
       <div className="container">
-        <div>{props.children}</div>
+        <div>{children}</div>
 
         <div
           className={"btn_top" + (hidden ? " hidden" : "")}

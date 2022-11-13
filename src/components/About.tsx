@@ -1,15 +1,14 @@
 import TypeIt from "typeit-react";
 
-import Section from "./Section";
 import { data } from "../data";
+
+import Section from "./Section";
+import SkillItem from "./SkillItem";
 
 import SchoolIcon from "@mui/icons-material/School";
 import EmailIcon from "@mui/icons-material/Email";
 import EventIcon from "@mui/icons-material/Event";
 import NearMeIcon from "@mui/icons-material/NearMe";
-
-import useScrollFadeIn from "../hooks/useScrollFadeIn";
-import SkillItem from "./SkillItem";
 
 function About() {
   const state = [
@@ -32,7 +31,6 @@ function About() {
   ];
   const skills = data.skills;
   const beingStudy = data.studiedSkills;
-  const onScrollFadeIn = useScrollFadeIn();
 
   return (
     <Section title={"About Me"} idProp={"about"}>
