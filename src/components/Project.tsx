@@ -2,9 +2,10 @@ import Section from "./Section";
 import ProjectItem from "./ProjectItem";
 
 import { data } from "../data";
+import { ProjectProps } from "../type";
 
 function Project() {
-  const state = data.projects;
+  const state: ProjectProps[] = data.projects;
 
   return (
     <Section title={"개인 프로젝트"} idProp={"project"}>

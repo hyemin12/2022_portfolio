@@ -6,9 +6,10 @@ export interface ProjectProps {
   date: string;
   tools: string[];
   features: string[];
+  tabs: string[];
+  tabContent: string[][];
   git: string;
   url: string;
-  imgs: string[];
   bgColor: string;
 }
 

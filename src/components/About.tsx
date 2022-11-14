@@ -63,7 +63,7 @@ function About() {
         <h1 className="section-title">기술스택</h1>
         <div className="skills">
           {skills.map((skill) => (
-            <SkillItem src={skill.src} name={skill.name} />
+            <SkillItem src={skill.src} name={skill.name} key={skill.name} />
           ))}
         </div>
         <p className="skill-subtitle">
@@ -71,7 +71,7 @@ function About() {
         </p>
         <div className="skills">
           {beingStudy.map((skill) => (
-            <SkillItem src={skill.src} name={skill.name} />
+            <SkillItem src={skill.src} name={skill.name} key={skill.name} />
           ))}
         </div>
       </article>
