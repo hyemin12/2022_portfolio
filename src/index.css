@@ -571,6 +571,10 @@ img {
   position: relative;
   overflow: hidden;
 }
+.studies-wrapper .img-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
 .studies-wrapper .studies-item .item-wrapper {
   height: 100%;
   background-color: #fff;

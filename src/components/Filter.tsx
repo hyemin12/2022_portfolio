@@ -10,7 +10,15 @@ interface FilterProp {
 function Filter({ setState, studiesState, initState }: FilterProp) {
   const [isActive, setIsActive] = useState(0);
 
-  const filters = ["All", "Nodejs", "React", "Typescript", "markup", "ect"];
+  const filters = [
+    "All",
+    "Nodejs",
+    "React",
+    "Typescript",
+    "markup",
+    "Vanilla JS",
+    "ect",
+  ];
 
   /** 공부한 내용 필터링하는 함수 */
   function handleFilter(event: any) {

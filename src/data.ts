@@ -17,7 +17,7 @@ export const data = {
     {
       filter: "Nodejs",
       id: "nodejs-mongodb",
-      title: "nodeJS + mongoDB +react - 회원가입,로그인 기능",
+      title: "[강의클론] nodeJS + mongoDB + react",
       git: "https://github.com/hyemin12/nodejs_mongodb",
     },
     {
@@ -51,7 +51,7 @@ export const data = {
     {
       filter: "Vanilla JS",
       id: "moment",
-      title: "크롬 앱",
+      title: "[강의클론] 크롬 앱",
 
       git: "https://github.com/hyemin12/vanillaJS-chrome-app",
       url: "https://hyemin12.github.io/vanillaJS-chrome-app/",
@@ -59,21 +59,21 @@ export const data = {
     {
       filter: "React",
       id: "twitter",
-      title: "트위터 클론 코딩",
+      title: "[강의클론] 트위터 ",
       git: "https://github.com/hyemin12/react-firebase-twitter",
     },
 
     {
       filter: "Vanilla JS",
       id: "starbucks",
-      title: "Starbucks 2017",
+      title: "[강의클론] Starbucks 2017",
       git: "https://github.com/hyemin12/vanilla-starbucks-app",
       url: "https://starbucks-responsive-app-ee135b.netlify.app",
     },
     {
       filter: "Vanilla JS",
       id: "paint",
-      title: "그림판",
+      title: "[강의클론] 그림판",
       git: "https://github.com/hyemin12/vanillaJS-paint-app",
       url: "https://hyemin12.github.io/vanillaJS-paint-app/",
     },
@@ -228,7 +228,7 @@ export const data = {
         "3. 개인 작업물 목록과 상세 내용 확인 가능(현재는 종료됨)",
         "4. 좌측 이름 옆 화살표 클릭시 프로필 확인 가능",
       ],
-      tabs: ["메인화면", "캘린더 + 일정", "할일목록", "작업물"],
+      tabs: ["메인화면", "캘린더 + 일정", "할일목록", "작업물", " about"],
       tabContent: [
         [
           "다양한 위젯들이 있는 메인 화면",
@@ -249,8 +249,24 @@ export const data = {
           "add 버튼을 누르면 캘린더 일정을 추가할 수 있는 모달창이 나타남",
           "axios.post로 일정 추가",
         ],
-        [],
-        [],
+        [
+          "할일 목록을 볼 수 있는 페이지",
+          "현재 날짜의 할일 목록, 남은 할일 목록(전체), 완료된 할일 목록으로 구성",
+          "add 버튼을 누르면 할일을 추가할 수 있는 modal창이 나타남",
+          "mysql 데이터베이스를 사용하여 데이터 관리",
+          "get , post를 이용해서 데이터를 생성/삭제/가져오기 기능을 구현",
+        ],
+        [
+          "제작한 포트폴리오를 모아둔 페이지",
+          "해당 필터 키워드를 누르면 포트폴리오가 필터링 됨",
+          "마우스 호버시 코드(Github), 배포 사이트로 이동할 수 있는 버튼이 나타남",
+          "상세내용이 있는 경우 상세페이지로 이동시켜주는 버튼이 나타남",
+        ],
+        [
+          "학력, 자격증, 프로그래밍 툴/스킬, 취미 등을 확인할 수 있는 페이지",
+          "mbti 차트는 react-recharts 라이브러리를 사용하여 제작",
+          "기존의 차트를 커스틈하여, 차트 안에 관련 텍스트들을 추가함",
+        ],
       ],
       git: "https://github.com/hyemin12/react-dashboard-app2",
       url: "https://lucid-yonath-d614bb.netlify.app/",
