@@ -612,7 +612,7 @@ img {
 .studies-wrapper .btn_link:hover {
   color: #fccb00;
 }
-.studies-wrapper .btn_route {
+.studies-wrapper .btn_more {
   display: flex;
   justify-content: center;
   width: 114px;
@@ -621,12 +621,18 @@ img {
   padding: 10px 20px;
   margin: 0 auto;
   margin-bottom: 25px;
+  border: none;
   border-radius: 20px;
   color: #fff;
   text-align: center;
   transition: 0.3s;
+  cursor: pointer;
 }
-.studies-wrapper .btn_route:hover {
+.studies-wrapper .btn_more.hidden {
+  display: none;
+  opacity: 0;
+}
+.studies-wrapper .btn_more:hover {
   opacity: 0.6;
 }
 /* Experience.tsx */

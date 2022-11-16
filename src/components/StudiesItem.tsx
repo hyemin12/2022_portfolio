@@ -1,3 +1,4 @@
+import React from "react";
 import LanguageIcon from "@mui/icons-material/Language";
 import CodeIcon from "@mui/icons-material/Code";
 
@@ -5,6 +6,7 @@ import { StudyProps } from "../type";
 
 const StudiesItem = (item: StudyProps) => {
   const { id, img, filter, title, url, git } = item;
+
   return (
     <>
       <li key={id} className="studies-item">
@@ -39,4 +41,4 @@ const StudiesItem = (item: StudyProps) => {
   );
 };
 
-export default StudiesItem;
+export default React.memo(StudiesItem);

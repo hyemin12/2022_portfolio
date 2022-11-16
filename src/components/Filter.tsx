@@ -1,15 +1,21 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import { StudyProps } from "../type";
 
 interface FilterProp {
-  setState: Dispatch<SetStateAction<StudyProps[]>>;
+  isActive: number;
   studiesState: StudyProps[];
-  initState: StudyProps[];
+  state: StudyProps[];
+  setState: Dispatch<SetStateAction<StudyProps[]>>;
+  setIsActive: Dispatch<SetStateAction<number>>;
 }
 
-function Filter({ setState, studiesState, initState }: FilterProp) {
-  const [isActive, setIsActive] = useState(0);
-
+function Filter({
+  isActive,
+  studiesState,
+  state,
+  setState,
+  setIsActive,
+}: FilterProp) {
   const filters = [
     "All",
     "Nodejs",
@@ -24,12 +30,11 @@ function Filter({ setState, studiesState, initState }: FilterProp) {
   function handleFilter(event: any) {
     const a = event.target.outerText;
 
-    const init = initState;
     if (a === "All") {
-      setState(studiesState);
+      setState(state);
       setIsActive(0);
     } else if (a) {
-      const newArr = init.filter((item) => item.filter === a);
+      const newArr = [...studiesState].filter((item) => item.filter === a);
       setState(newArr);
       setIsActive(event.target.value);
     }

@@ -1,28 +1,42 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useCallback, useRef, useState } from "react";
 import classNames from "classnames";
 
 import Section from "./Section";
+import Filter from "./Filter";
 import StudiesItem from "./StudiesItem";
 
 import { StudyProps } from "../type";
 import { data } from "../data";
-import Filter from "./Filter";
 
-const Studies = ({ studiesState }: { studiesState: StudyProps[] }) => {
-  const location = useLocation();
+const Studies = () => {
+  const studiesState: StudyProps[] = data.studies;
+  const [isActive, setIsActive] = useState(0);
+  const [state, setState] = useState<StudyProps[]>(studiesState.slice(0, 6));
 
-  const initState: StudyProps[] = data.studies;
+  const btnRef = useRef<HTMLButtonElement>(null);
 
-  const [state, setState] = useState(studiesState);
+  let count = 1;
+
+  /** 더보기 버튼 누르면 실행되는 함수 (6개씩 추가) */
+  const addMoreState = useCallback(() => {
+    count += 1;
+    const limit = 6;
+    const plusArr: StudyProps[] = studiesState.slice(0, limit * count);
+    if (plusArr.length >= studiesState.length) {
+      btnRef.current.classList.add("hidden");
+    }
+    setState(plusArr);
+  }, [count]);
 
   return (
     <Section title={"공부한 내용"} idProp={"study"}>
       <div className="studies-wrapper">
         <Filter
-          setState={setState}
+          isActive={isActive}
+          state={state}
           studiesState={studiesState}
-          initState={initState}
+          setState={setState}
+          setIsActive={setIsActive}
         />
 
         <ul
@@ -36,10 +50,10 @@ const Studies = ({ studiesState }: { studiesState: StudyProps[] }) => {
               return <StudiesItem {...item} key={item.id} />;
             })}
         </ul>
-        {location.pathname !== "/studies" && (
-          <Link to="/studies" className="btn_route">
-            더 보러가기
-          </Link>
+        {isActive === 0 && (
+          <button className="btn_more" onClick={addMoreState} ref={btnRef}>
+            더보기
+          </button>
         )}
       </div>
     </Section>

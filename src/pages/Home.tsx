@@ -34,7 +34,7 @@ const Home = () => {
 
           <Project />
 
-          <Studies studiesState={state} />
+          <Studies />
 
           <Experience />
 
