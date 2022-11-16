@@ -1,15 +1,14 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 import Layout from "../components/Layout";
+import Tab from "../components/Detail/Tab";
 import DetailHeader from "../components/Detail/DetailHeader";
 import DetailContent from "../components/Detail/DetailContent";
-
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import BtnBack from "../components/BtnBack";
 
 import { data } from "../data";
 import { ProjectProps } from "../type";
-import Tab from "../components/Detail/Tab";
-import { useState } from "react";
 
 function DetailPage() {
   const [tabIdx, setTabIdx] = useState<number>(0);
@@ -17,18 +16,10 @@ function DetailPage() {
   const state: ProjectProps[] = data.projects;
   const item: ProjectProps = state.filter((a) => a.id === itemId)[0];
 
-  /* 뒤로가기 */
-  const navigate = useNavigate();
-  function goBack() {
-    navigate(-1);
-  }
   return (
     <Layout>
       <section className="inner work-detail-wrapper">
-        <div className="btn_back" onClick={goBack}>
-          <ArrowBackIosIcon />
-          뒤로가기
-        </div>
+        <BtnBack />
         <div className="work-detail-main">
           <DetailHeader item={item} />
           <div className="tab-wrapper">

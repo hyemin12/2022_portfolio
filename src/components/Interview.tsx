@@ -1,7 +1,6 @@
 import { data } from "../data";
 import Slider from "./Slide";
 import Section from "../components/Section";
-import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 interface InterviewProps {
   title: string;
@@ -10,8 +9,6 @@ interface InterviewProps {
 
 function Interview() {
   const interviews: InterviewProps[] = data.interview;
-
-  const onScrollFadeIn = useScrollFadeIn();
 
   return (
     <Section title={"셀프인터뷰"} idProp={"self"}>

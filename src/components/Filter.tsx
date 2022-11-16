@@ -4,18 +4,11 @@ import { StudyProps } from "../type";
 interface FilterProp {
   isActive: number;
   studiesState: StudyProps[];
-  state: StudyProps[];
   setState: Dispatch<SetStateAction<StudyProps[]>>;
   setIsActive: Dispatch<SetStateAction<number>>;
 }
 
-function Filter({
-  isActive,
-  studiesState,
-  state,
-  setState,
-  setIsActive,
-}: FilterProp) {
+function Filter({ isActive, studiesState, setState, setIsActive }: FilterProp) {
   const filters = [
     "All",
     "Nodejs",
@@ -29,9 +22,9 @@ function Filter({
   /** 공부한 내용 필터링하는 함수 */
   function handleFilter(event: any) {
     const a = event.target.outerText;
-
+    const init = studiesState.slice(0, 6);
     if (a === "All") {
-      setState(state);
+      setState(init);
       setIsActive(0);
     } else if (a) {
       const newArr = [...studiesState].filter((item) => item.filter === a);

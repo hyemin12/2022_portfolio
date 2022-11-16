@@ -10,6 +10,7 @@ import { data } from "../data";
 
 const Studies = () => {
   const studiesState: StudyProps[] = data.studies;
+
   const [isActive, setIsActive] = useState(0);
   const [state, setState] = useState<StudyProps[]>(studiesState.slice(0, 6));
 
@@ -33,7 +34,6 @@ const Studies = () => {
       <div className="studies-wrapper">
         <Filter
           isActive={isActive}
-          state={state}
           studiesState={studiesState}
           setState={setState}
           setIsActive={setIsActive}
