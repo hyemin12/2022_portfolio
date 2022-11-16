@@ -9,11 +9,8 @@ import Project from "../components/Project";
 import Interview from "../components/Interview";
 import Experience from "../components/Experience";
 
-import { data } from "../data";
-
 const Home = () => {
   const [loading, setLoading] = useState<boolean>(true);
-  const state = data.studies.slice(0, 6);
 
   useEffect(() => {
     const handleDelay = setTimeout(() => {
