@@ -125,6 +125,7 @@ img {
 }
 .inner {
   min-width: 1050px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 50px;
 }
