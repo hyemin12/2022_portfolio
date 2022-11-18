@@ -40,6 +40,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         >
           <p>↑ </p>
         </div>
+        <footer></footer>
       </div>
     </div>
   );

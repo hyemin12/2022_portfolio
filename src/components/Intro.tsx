@@ -20,11 +20,6 @@ function Intro2() {
       url: "https://hyemin-12.tistory.com/",
       icon: <BookIcon />,
     },
-    {
-      name: "이력서",
-      url: "https://hyemin12.github.io/hm_resume/",
-      icon: <FeedIcon />,
-    },
   ];
 
   const moveBottom = (e: any) => {
