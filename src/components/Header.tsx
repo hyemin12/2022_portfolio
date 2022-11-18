@@ -5,7 +5,7 @@ function Header() {
     <header>
       <div className="nav-wrapper w1200">
         <div className="logo">
-          <h2 className="font-point">hyemin</h2>
+          <h2>hyemin</h2>
         </div>
         <Nav />
 
