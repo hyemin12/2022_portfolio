@@ -41,6 +41,7 @@ function Intro2() {
                 target="_blank"
                 className="social-icon"
                 rel="noreferrer"
+                aria-label={`${item.name}이동`}
               >
                 {item.icon}
               </a>

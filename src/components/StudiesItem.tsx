@@ -24,12 +24,22 @@ const StudiesItem = (item: StudyProps) => {
               <h3 className="item-title">{title}</h3>
               <div className="btn-wrapper">
                 {git && (
-                  <a href={git} target="_blank" rel="noreferrer">
+                  <a
+                    href={git}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="github 이동"
+                  >
                     <CodeIcon className="btn_link" />
                   </a>
                 )}
                 {url && (
-                  <a href={url} target="_blank" rel="noreferrer">
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="배포사이트로 이동"
+                  >
                     <LanguageIcon className="btn_link" />
                   </a>
                 )}
