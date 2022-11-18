@@ -31,7 +31,7 @@ const Nav = () => {
 
   return (
     <>
-      <ul className="navs">
+      <div className="navs">
         {navData.map((item, idx) =>
           location.pathname !== "/" ? (
             <NavLink to="/" key={item.name}>
@@ -50,7 +50,7 @@ const Nav = () => {
             </a>
           )
         )}
-      </ul>
+      </div>
     </>
   );
 };
