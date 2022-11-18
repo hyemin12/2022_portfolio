@@ -90,7 +90,7 @@ export const data = {
     {
       filter: "markup",
       id: "responsive1",
-      img: "responsive1-1",
+      img: "responsive1",
       title: "반응형 사이트 - readOnly",
       git: "https://github.com/hyemin12/responsive-webstie-readOnly",
       url: "https://hyemin12.github.io/responsive-webstie-readOnly/",
@@ -98,7 +98,7 @@ export const data = {
     {
       filter: "markup",
       id: "responsive2",
-      img: "responsive2-1",
+      img: "responsive2",
       title: "반응형 사이트 - massively",
       ect: "https://html5up.net/massively",
       git: "https://github.com/hyemin12/responsive-webstie-massively",
@@ -107,7 +107,7 @@ export const data = {
     {
       filter: "markup",
       id: "responsive3",
-      img: "responsive3-1",
+      img: "responsive3",
       title: "반응형 사이트 - funny Flakes",
       ect: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbimORE%2FbtrE8N156Ne%2FEE9eIvq1Zd9k414O3vNH80%2Fimg.jpg",
       git: "https://github.com/hyemin12/responsive-webstie-funnyFlakes",
@@ -116,7 +116,7 @@ export const data = {
     {
       filter: "markup",
       id: "responsive4",
-      img: "responsive4-1",
+      img: "responsive4",
       title: "반응형 사이트 - forty",
       ect: "https://html5up.net/forty",
       git: "https://github.com/hyemin12/responsive-webstie-forty/",

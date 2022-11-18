@@ -13,7 +13,7 @@ const StudiesItem = (item: StudyProps) => {
       <li key={id} className="studies-item">
         <div className="img-wrapper">
           <img
-            src={img ? `/assets/${img}.png` : `/assets/${id}.png`}
+            src={img ? `/assets/${img}.webp` : `/assets/${id}.webp`}
             alt={title}
           />
         </div>

@@ -30,7 +30,7 @@ function Intro2() {
   return (
     <div
       className="intro-wrapper sectionRef"
-      style={{ backgroundImage: `url(${"./assets/hyemin.jpg"})` }}
+      style={{ backgroundImage: `url(${"./assets/hyemin.webp"})` }}
       id="homeRef"
     >
       <div className="intro-contents">
