@@ -1,4 +1,3 @@
-import Loading from "./Loading";
 import Header from "./Header";
 import { useEffect, useState } from "react";
 

@@ -1,14 +1,9 @@
-import { useLocation } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BookIcon from "@mui/icons-material/Book";
-import FeedIcon from "@mui/icons-material/Feed";
-import { Link } from "react-router-dom";
 
 import TypeIt from "typeit-react";
 
 function Intro2() {
-  const location = useLocation();
-
   const socials = [
     {
       name: "깃허브",
