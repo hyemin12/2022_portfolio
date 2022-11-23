@@ -1,6 +1,6 @@
 # 2022 포트폴리오
 
-<a href="https://h-m-portfolio.netlify.app/" target="_blank"><img src="./public/assets/portfolio.png" /></a>
+<a href="https://h-m-portfolio.netlify.app/" target="_blank"><img src="./mdImg/portfolio2022.png" /></a>
 
 이미지를 클릭하면 사이트로 이동합니다.
 
