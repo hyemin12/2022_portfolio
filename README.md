@@ -118,7 +118,7 @@
 
 ## 성능 최적화하기
 
-<img src="./mdImg/pagespeed.jpg" />
+<img src="https://github.com/hyemin12/2022_portfolio/blob/master/mdImg/pagespeed.JPG" />
 
 [성능개선하기]
 
