@@ -15,10 +15,19 @@ export const data = {
       url: "https://wizardly-hermann-7fecb3.netlify.app/",
     },
     {
-      filter: "Nodejs",
-      id: "nodejs-mongodb",
-      title: "[강의클론] nodeJS + mongoDB + react",
-      git: "https://github.com/hyemin12/nodejs_mongodb",
+      filter: "Typescript",
+      id: "tsc-todo",
+      title: "투두리스트",
+      git: "https://github.com/hyemin12/typescript-todo-app",
+      url: "https://hm-tsc-todo-app.netlify.app",
+    },
+    {
+      filter: "Typescript",
+      id: "tsc-shop",
+      title: "쇼핑몰",
+      git: "https://github.com/hyemin12/react-shop-practice-app/",
+      url: "https://h-m-shop.netlify.app/",
+      bgColor: "#d9e4eb",
     },
     {
       filter: "Nodejs",
@@ -33,19 +42,10 @@ export const data = {
       url: "https://hyemin12.github.io/codingtest_",
     },
     {
-      filter: "Typescript",
-      id: "tsc-todo",
-      title: "투두리스트",
-      git: "https://github.com/hyemin12/typescript-todo-app",
-      url: "https://hm-tsc-todo-app.netlify.app",
-    },
-    {
-      filter: "Typescript",
-      id: "tsc-shop",
-      title: "쇼핑몰",
-      git: "https://github.com/hyemin12/react-shop-practice-app/",
-      url: "https://h-m-shop.netlify.app/",
-      bgColor: "#d9e4eb",
+      filter: "Nodejs",
+      id: "nodejs-mongodb",
+      title: "[강의클론] nodeJS + mongoDB + react",
+      git: "https://github.com/hyemin12/nodejs_mongodb",
     },
 
     {
